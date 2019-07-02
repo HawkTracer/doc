@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: /home/loganek/repos/hawktracer/lib/include/hawktracer/system_info.h File Reference</title>
+<title>HawkTracer: /Users/mkolny/hawktracer/lib/include/hawktracer/system_info.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -99,11 +99,8 @@ $(document).ready(function(){initNavTree('system__info_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afffda66bfcdc704c9821633649bd5f4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> <a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a483398cb5c63239686d95d34582727fa">HT_Endianness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__info_8h.html#afffda66bfcdc704c9821633649bd5f4a">ht_system_info_get_endianness</a> (void)</td></tr>
+<tr class="memdesc:afffda66bfcdc704c9821633649bd5f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the endianness of the system.  <a href="#afffda66bfcdc704c9821633649bd5f4a">More...</a><br /></td></tr>
 <tr class="separator:afffda66bfcdc704c9821633649bd5f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af666947bb0d8c4122f0a4ddff9aab5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__info_8h.html#af666947bb0d8c4122f0a4ddff9aab5bd">ht_system_info_push_endianness_info_to_listener</a> (<a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a> callback, void *listener, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialize)</td></tr>
-<tr class="separator:af666947bb0d8c4122f0a4ddff9aab5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b7f792e16e7e451f86ff69da84bc24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__info_8h.html#a38b7f792e16e7e451f86ff69da84bc24">ht_system_info_push_system_info_to_listener</a> (<a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a> callback, void *listener, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialize)</td></tr>
-<tr class="separator:a38b7f792e16e7e451f86ff69da84bc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="afffda66bfcdc704c9821633649bd5f4a"></a>
@@ -122,73 +119,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="af666947bb0d8c4122f0a4ddff9aab5bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af666947bb0d8c4122f0a4ddff9aab5bd">&#9670;&nbsp;</a></span>ht_system_info_push_endianness_info_to_listener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t ht_system_info_push_endianness_info_to_listener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>listener</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>&#160;</td>
-          <td class="paramname"><em>serialize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a38b7f792e16e7e451f86ff69da84bc24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38b7f792e16e7e451f86ff69da84bc24">&#9670;&nbsp;</a></span>ht_system_info_push_system_info_to_listener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t ht_system_info_push_system_info_to_listener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>listener</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>&#160;</td>
-          <td class="paramname"><em>serialize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Gets the endianness of the system. </p>
+<dl class="section return"><dt>Returns</dt><dd>endianness of the system. </dd></dl>
 
 </div>
 </div>

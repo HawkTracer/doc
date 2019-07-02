@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -98,15 +98,6 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>HT_API
 : <a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">macros.h</a>
 </li>
-<li>ht_bag_last
-: <a class="el" href="bag_8h.html#acb6d1acd50b9bc39e7db8dfb578d2147">bag.h</a>
-</li>
-<li>ht_bag_nth
-: <a class="el" href="bag_8h.html#a3b43a439108cf97018a9392c64ddd937">bag.h</a>
-</li>
-<li>ht_bag_size
-: <a class="el" href="bag_8h.html#a26d842839e474945273fb0bda9d557b4">bag.h</a>
-</li>
 <li>HT_Boolean
 : <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">base_types.h</a>
 </li>
@@ -125,14 +116,23 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>HT_CPP11
 : <a class="el" href="macros_8h.html#a2191cdbca91b85fc2a7157732728687f">macros.h</a>
 </li>
+<li>ht_cpu_usage_context_create()
+: <a class="el" href="cpu__usage_8h.html#a431b2b64225aea9f499ef4ea6e79fe05">cpu_usage.h</a>
+</li>
+<li>ht_cpu_usage_context_destroy()
+: <a class="el" href="cpu__usage_8h.html#a9d02cdfc1f1aace5ee7512f5c730f3c5">cpu_usage.h</a>
+</li>
+<li>ht_cpu_usage_get_percentage()
+: <a class="el" href="cpu__usage_8h.html#a58c99fec1c948470a9f28f15ebab1775">cpu_usage.h</a>
+</li>
+<li>HT_CPUUsageContext
+: <a class="el" href="cpu__usage_8h.html#a070ebb8fbc774a0cb82b022a635e9dee">cpu_usage.h</a>
+</li>
 <li>HT_CREATE_TYPE
 : <a class="el" href="alloc_8h.html#a91169165aad332c973e21048f63e3fe9">alloc.h</a>
 </li>
 <li>HT_DECL_EVENT
 : <a class="el" href="events_8h.html#a01c194e82a354cc3ce5817ce135afa03">events.h</a>
-</li>
-<li>HT_DECLARE_BAG_TYPE
-: <a class="el" href="bag_8h.html#aa87236c11e2e1cecf776ec1970ef2ee0">bag.h</a>
 </li>
 <li>HT_DECLARE_EVENT_KLASS
 : <a class="el" href="event__macros_8h.html#a33d6cfa41bc670abc6e55e136376fa95">event_macros.h</a>
@@ -332,9 +332,6 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>HT_EVENT_SERIALIZE_FUNCTION_DEF
 : <a class="el" href="event__macros_8h.html#a40e65a98fc5f174d1f2e223565cf01df">event_macros.h</a>
 </li>
-<li>ht_event_utils_serialize_event_to_buffer()
-: <a class="el" href="event__utils_8h.html#a28751a6ad8e6ff623af66c1ba71daae2">event_utils.h</a>
-</li>
 <li>HT_EventId
 : <a class="el" href="base__types_8h.html#a5de08c62c6535d2a1b0b3af9fa4630ce">base_types.h</a>
 </li>
@@ -355,13 +352,13 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 : <a class="el" href="feature__cached__string_8h.html#ae6813d573e04001e10b347850ea7ca5d">feature_cached_string.h</a>
 </li>
 <li>ht_feature_cached_string_add_mapping()
-: <a class="el" href="feature__cached__string_8h.html#abcdc7262da1ee386007bfe4366891094">feature_cached_string.h</a>
+: <a class="el" href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee">feature_cached_string.h</a>
 </li>
 <li>ht_feature_cached_string_disable()
 : <a class="el" href="feature__cached__string_8h.html#af74ac5fad18e243adde0de5ecb4f856c">feature_cached_string.h</a>
 </li>
 <li>ht_feature_cached_string_enable()
-: <a class="el" href="feature__cached__string_8h.html#a78c2bc8b400e756fa045a5a8f555e219">feature_cached_string.h</a>
+: <a class="el" href="feature__cached__string_8h.html#a5d0e497f9e9f9364f7dcfbf33f446742">feature_cached_string.h</a>
 </li>
 <li>ht_feature_cached_string_push_map()
 : <a class="el" href="feature__cached__string_8h.html#aac827e6d71a7bfc0d728db3cbf22f3fe">feature_cached_string.h</a>
@@ -387,14 +384,8 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>ht_feature_callstack_stop()
 : <a class="el" href="feature__callstack_8h.html#a0bce125cce61807a2554e2ffb36a27d9">feature_callstack.h</a>
 </li>
-<li>ht_feature_disable()
-: <a class="el" href="feature_8h.html#a20805a7fccb7ef45b34d3c88a6daa446">feature.h</a>
-</li>
-<li>ht_feature_register_core_features()
-: <a class="el" href="feature_8h.html#abae4a1ca53468cc1ef4b7bfc43766a82">feature.h</a>
-</li>
 <li>HT_FeatureDisableCallback
-: <a class="el" href="hawktracer_2registry_8h.html#a7d0974410ea246c44324e492aa74cff2">registry.h</a>
+: <a class="el" href="registry_8h.html#a7d0974410ea246c44324e492aa74cff2">registry.h</a>
 </li>
 <li>ht_file_dump_listener_callback()
 : <a class="el" href="file__dump__listener_8h.html#a73041ad8ac5ac9d2f0e7ef06f91725be">file_dump_listener.h</a>
@@ -407,9 +398,6 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 </li>
 <li>HT_FileDumpListener
 : <a class="el" href="file__dump__listener_8h.html#a1cb873c2d83b138acee4e01de7c22f45">file_dump_listener.h</a>
-</li>
-<li>ht_find_or_create_listener()
-: <a class="el" href="timeline__listener_8h.html#a798e22ada2f7f7f6797e4dcb41187805">timeline_listener.h</a>
 </li>
 <li>ht_free()
 : <a class="el" href="alloc_8h.html#a585fcf29e23cc074acebd81c97fe2ba4">alloc.h</a>
@@ -435,29 +423,32 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>HT_INVALID_KLASS_ID
 : <a class="el" href="base__types_8h.html#a82161c09606b34ff0276b6e373e68987">base_types.h</a>
 </li>
+<li>ht_is_initialized()
+: <a class="el" href="init_8h.html#a1574f53e8440bfe4b5dd13b0df615171">init.h</a>
+</li>
 <li>HT_LIKELY
 : <a class="el" href="macros_8h.html#adeca6f4d414ef868884f89b000cc7737">macros.h</a>
-</li>
-<li>ht_listener_buffer_deinit()
-: <a class="el" href="listener__buffer_8h.html#ad6942d02fb3c76e812d7a67d47f48c8f">listener_buffer.h</a>
-</li>
-<li>ht_listener_buffer_init()
-: <a class="el" href="listener__buffer_8h.html#a376d01547664e0433bb5c3bd4ce56552">listener_buffer.h</a>
-</li>
-<li>ht_listener_buffer_process_serialized_events()
-: <a class="el" href="listener__buffer_8h.html#ade62eb95ae443179dbfd0c53d0dab3fd">listener_buffer.h</a>
-</li>
-<li>ht_listener_buffer_process_unserialized_events()
-: <a class="el" href="listener__buffer_8h.html#aee71aa1894a0b0082b318e9d81d83865">listener_buffer.h</a>
-</li>
-<li>HT_ListenerFlushCallback
-: <a class="el" href="listener__buffer_8h.html#a022809caad4cf32ed20c0aaf66748493">listener_buffer.h</a>
 </li>
 <li>HT_MACRO_CONCAT
 : <a class="el" href="macros_8h.html#a1f800d31696a3618d50998fd7be08c69">macros.h</a>
 </li>
 <li>HT_MACRO_CONCAT_
 : <a class="el" href="macros_8h.html#a5318e24e1c3f30f7713746e7fea22ed9">macros.h</a>
+</li>
+<li>ht_memory_usage_context_create()
+: <a class="el" href="memory__usage_8h.html#ab4613b9f94aca171fd68631202f1417b">memory_usage.h</a>
+</li>
+<li>ht_memory_usage_context_destroy()
+: <a class="el" href="memory__usage_8h.html#aac1e303d7a4585fa9c326194d80d0152">memory_usage.h</a>
+</li>
+<li>ht_memory_usage_get_usage()
+: <a class="el" href="memory__usage_8h.html#a5ae4f3c79f500727748db2e7f2eece36">memory_usage.h</a>
+</li>
+<li>HT_MEMORY_USAGE_INVALID_VALUE
+: <a class="el" href="memory__usage_8h.html#a624ab7f0216c90219ae97e9227ad6243">memory_usage.h</a>
+</li>
+<li>HT_MemoryUsageContext
+: <a class="el" href="memory__usage_8h.html#a389db67fb09ab60b82a545c14b4ad2e0">memory_usage.h</a>
 </li>
 <li>HT_MKCREFLECT_Types_Ext
 : <a class="el" href="base__types_8h.html#ac636f0343cc4524378a8af8908fe9e4c">base_types.h</a>
@@ -486,21 +477,6 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>ht_monotonic_clock_get_timestamp()
 : <a class="el" href="monotonic__clock_8h.html#a2c6cbf0d67f9d791055298879d0a9f8d">monotonic_clock.h</a>
 </li>
-<li>HT_Mutex
-: <a class="el" href="mutex_8h.html#a73e4bf6306f47db721d9bae7a6f268aa">mutex.h</a>
-</li>
-<li>ht_mutex_create()
-: <a class="el" href="mutex_8h.html#a5ba7a167952ab3f87ad534eecdf3fe4d">mutex.h</a>
-</li>
-<li>ht_mutex_destroy()
-: <a class="el" href="mutex_8h.html#ac8ffc07ec5499de3b5c1251688390393">mutex.h</a>
-</li>
-<li>ht_mutex_lock()
-: <a class="el" href="mutex_8h.html#a6710929bab6749479a4697b4f89bb475">mutex.h</a>
-</li>
-<li>ht_mutex_unlock()
-: <a class="el" href="mutex_8h.html#a4bfe9bdc61a9eb715b63c10dc5bc7a86">mutex.h</a>
-</li>
 <li>ht_pthread_mapped_tracepoint_add_mapping()
 : <a class="el" href="posix__mapped__tracepoint_8h.html#aae77ea2ee9b49c2fdf79d9346152b73d">posix_mapped_tracepoint.h</a>
 </li>
@@ -510,68 +486,29 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>ht_pthread_mapped_tracepoint_leave()
 : <a class="el" href="posix__mapped__tracepoint_8h.html#aebe155d238332a652f7ab7d349bee256">posix_mapped_tracepoint.h</a>
 </li>
-<li>HT_PTR_ADD
-: <a class="el" href="stack_8h.html#a70abb48405840e0fb8054aeb1dddac7b">stack.h</a>
-</li>
 <li>ht_realloc()
 : <a class="el" href="alloc_8h.html#abcedc0fe3efc2d8f9821144e8be3f187">alloc.h</a>
 </li>
 <li>HT_REGISTER_EVENT_KLASS
 : <a class="el" href="events_8h.html#abdbe5c0bae7676d9122587c229e006fd">events.h</a>
 </li>
-<li>ht_registry_deinit()
-: <a class="el" href="internal_2registry_8h.html#a2c2bc68817c07c0070f0a7d44c103fc5">registry.h</a>
-</li>
-<li>ht_registry_find_listener_container()
-: <a class="el" href="internal_2registry_8h.html#a49b2ba80c7cd6c22f267e3eed56bce27">registry.h</a>
-</li>
 <li>ht_registry_get_event_klasses()
-: <a class="el" href="hawktracer_2registry_8h.html#a028328a4814cefc13f248fef70ca88dd">registry.h</a>
-</li>
-<li>ht_registry_init()
-: <a class="el" href="internal_2registry_8h.html#a8c2c8aa63484f80029e97ec0065864f0">registry.h</a>
+: <a class="el" href="registry_8h.html#a028328a4814cefc13f248fef70ca88dd">registry.h</a>
 </li>
 <li>ht_registry_push_registry_klasses_to_listener()
-: <a class="el" href="hawktracer_2registry_8h.html#a4d4d40e6ca20f3ccabb9a99a820d27e7">registry.h</a>
+: <a class="el" href="registry_8h.html#a4d4d40e6ca20f3ccabb9a99a820d27e7">registry.h</a>
 </li>
 <li>ht_registry_register_event_klass()
-: <a class="el" href="hawktracer_2registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">registry.h</a>
+: <a class="el" href="registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">registry.h</a>
 </li>
 <li>ht_registry_register_feature()
-: <a class="el" href="hawktracer_2registry_8h.html#a9dff9ad37979419c120ca0c31edbd916">registry.h</a>
-</li>
-<li>ht_registry_register_listener_container()
-: <a class="el" href="internal_2registry_8h.html#a1ebb2fb1e3b0fe67bd3d6b9fd91a222d">registry.h</a>
+: <a class="el" href="registry_8h.html#a9dff9ad37979419c120ca0c31edbd916">registry.h</a>
 </li>
 <li>HT_SCOPED_TRACEPOINT_MACRO_ENABLED
 : <a class="el" href="scoped__tracepoint_8h.html#a57a59b50c1d226065b09137b225c19d9">scoped_tracepoint.h</a>
 </li>
-<li>ht_stack_deinit()
-: <a class="el" href="stack_8h.html#ae59bcc42de113755700cf959a756c8b9">stack.h</a>
-</li>
-<li>ht_stack_init()
-: <a class="el" href="stack_8h.html#adf47440a3631e655ff2d7789de50e384">stack.h</a>
-</li>
-<li>ht_stack_pop()
-: <a class="el" href="stack_8h.html#a8111cb23a34a20833e7b25d76c76fe02">stack.h</a>
-</li>
-<li>ht_stack_push()
-: <a class="el" href="stack_8h.html#adea905663644f1fe13c69a7a09309d30">stack.h</a>
-</li>
-<li>ht_stack_top
-: <a class="el" href="stack_8h.html#ad8796d86f9824e4574c5c24060aae94c">stack.h</a>
-</li>
 <li>ht_system_info_get_endianness()
 : <a class="el" href="system__info_8h.html#afffda66bfcdc704c9821633649bd5f4a">system_info.h</a>
-</li>
-<li>ht_system_info_push_endianness_info_to_listener()
-: <a class="el" href="system__info_8h.html#af666947bb0d8c4122f0a4ddff9aab5bd">system_info.h</a>
-</li>
-<li>ht_system_info_push_system_info_to_listener()
-: <a class="el" href="system__info_8h.html#a38b7f792e16e7e451f86ff69da84bc24">system_info.h</a>
-</li>
-<li>HT_Task
-: <a class="el" href="task__scheduler_8h.html#a4145a54e96574c3f28fc2f31a0a37f8e">task_scheduler.h</a>
 </li>
 <li>ht_task_scheduler_create()
 : <a class="el" href="task__scheduler_8h.html#a22461886877e0799b4e813b0a8c835b3">task_scheduler.h</a>
@@ -601,7 +538,7 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 : <a class="el" href="task__scheduler_8h.html#a3f8c7ed1092d06e262f41c5b74a2d3eda06ec90fe95858a41abb8eb15b0b4519a">task_scheduler.h</a>
 </li>
 <li>HT_TaskCallback
-: <a class="el" href="task__scheduler_8h.html#a145b7316ff9f19f08cd8888f42e27f49">task_scheduler.h</a>
+: <a class="el" href="task__scheduler_8h.html#a51dffc8757a813907fc3342595c4df8f">task_scheduler.h</a>
 </li>
 <li>HT_TaskId
 : <a class="el" href="task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6">task_scheduler.h</a>
@@ -621,32 +558,8 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>ht_tcp_listener_destroy()
 : <a class="el" href="tcp__listener_8h.html#aa0fff02271240e3c396e209bd7c1111c">tcp_listener.h</a>
 </li>
-<li>ht_tcp_server_create()
-: <a class="el" href="tcp__server_8h.html#a4224343b11eb48698d3f7427ee1c1f30">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_destroy()
-: <a class="el" href="tcp__server_8h.html#a334ebb4f8af7e576b468be21f375a063">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_is_running()
-: <a class="el" href="tcp__server_8h.html#a3bcebd9b95eb35a2bedd113fa31ef535">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_start()
-: <a class="el" href="tcp__server_8h.html#af36c8c2783b7f537125c6a92bad48312">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_stop()
-: <a class="el" href="tcp__server_8h.html#a812c5a1696dfe5a5c36aad1b1407e6d3">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_write()
-: <a class="el" href="tcp__server_8h.html#a6643f445c58f74aa1e917425f338565e">tcp_server.h</a>
-</li>
-<li>ht_tcp_server_write_to_socket()
-: <a class="el" href="tcp__server_8h.html#a777df44295ab141a70d84594862a82ff">tcp_server.h</a>
-</li>
 <li>HT_TCPListener
 : <a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">tcp_listener.h</a>
-</li>
-<li>HT_TCPServer
-: <a class="el" href="tcp__server_8h.html#a6fbffb76a2a73b5beecef6567f698da9">tcp_server.h</a>
 </li>
 <li>ht_thread_get_current_thread_id()
 : <a class="el" href="thread_8h.html#a0c9b994cac5fa5f3d017ab0f3b9fbadd">thread.h</a>
@@ -655,8 +568,8 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 : <a class="el" href="macros_8h.html#a28d0eb6eaca9432a360610a2806902f9">macros.h</a>
 </li>
 <li>HT_ThreadId
-: <a class="el" href="core__events_8h.html#ac4bb54b0ea22b8195d7fe75063f4d457">core_events.h</a>
-, <a class="el" href="base__types_8h.html#a794d6081d06de36ce1b6606917d2aee1">base_types.h</a>
+: <a class="el" href="base__types_8h.html#a794d6081d06de36ce1b6606917d2aee1">base_types.h</a>
+, <a class="el" href="core__events_8h.html#ac4bb54b0ea22b8195d7fe75063f4d457">core_events.h</a>
 </li>
 <li>HT_Timeline
 : <a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">timeline.h</a>
@@ -682,41 +595,17 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>ht_timeline_init_event()
 : <a class="el" href="timeline_8h.html#a957cfb0634357ad48cba4da767766d50">timeline.h</a>
 </li>
-<li>ht_timeline_listener_container_create()
-: <a class="el" href="timeline__listener_8h.html#afd73f484482e58eb1cd0022d777ac045">timeline_listener.h</a>
-</li>
-<li>ht_timeline_listener_container_get_id()
-: <a class="el" href="timeline__listener__container_8h.html#af04891ffd6dac2aa51cb493a499833c7">timeline_listener_container.h</a>
-</li>
-<li>ht_timeline_listener_container_notify_listeners()
-: <a class="el" href="timeline__listener__container_8h.html#a35746973022c78fb2252d3c8827e00c1">timeline_listener_container.h</a>
-</li>
-<li>ht_timeline_listener_container_ref()
-: <a class="el" href="timeline__listener__container_8h.html#a1ab5f57864d09f46139fc989e51b1708">timeline_listener_container.h</a>
-</li>
-<li>ht_timeline_listener_container_register_listener()
-: <a class="el" href="timeline__listener_8h.html#a45f297162c17166ee0986ec1e82927b6">timeline_listener.h</a>
-</li>
-<li>ht_timeline_listener_container_set_id()
-: <a class="el" href="timeline__listener__container_8h.html#a2d8b7e4db9bdd20837c2d7eef206c791">timeline_listener_container.h</a>
-</li>
-<li>ht_timeline_listener_container_unref()
-: <a class="el" href="timeline__listener__container_8h.html#a92a70d7a680c999afa3f5424e150899e">timeline_listener_container.h</a>
-</li>
-<li>ht_timeline_listener_container_unregister_all_listeners()
-: <a class="el" href="timeline__listener_8h.html#acfb711514a1bd2ebff3f9bab6469e38f">timeline_listener.h</a>
-</li>
 <li>ht_timeline_listener_push_metadata()
 : <a class="el" href="timeline__listener_8h.html#a2cff3c1f5b80386f2b9518442a542dea">timeline_listener.h</a>
 </li>
 <li>HT_TIMELINE_MAX_FEATURES
 : <a class="el" href="timeline_8h.html#a816e9e186a1b084ac2c82308fb2e6746">timeline.h</a>
 </li>
-<li>ht_timeline_push_event()
-: <a class="el" href="timeline_8h.html#a372a26ed4b2e5512eed0f2bb990819d6">timeline.h</a>
-</li>
 <li>HT_TIMELINE_PUSH_EVENT
 : <a class="el" href="timeline_8h.html#a7ce94406f39b8da0620b1fe61d4095e9">timeline.h</a>
+</li>
+<li>ht_timeline_push_event()
+: <a class="el" href="timeline_8h.html#a372a26ed4b2e5512eed0f2bb990819d6">timeline.h</a>
 </li>
 <li>HT_TIMELINE_PUSH_EVENT_PEDANTIC
 : <a class="el" href="timeline_8h.html#ac79cc9fab51f96a62edb88280790b216">timeline.h</a>
@@ -739,8 +628,14 @@ $(document).ready(function(){initNavTree('globals_h.html','');});
 <li>HT_TimestampNs
 : <a class="el" href="base__types_8h.html#aa304d120184a3d79d145f9521a3025d5">base_types.h</a>
 </li>
+<li>HT_TP_DYN_STRACEPOINT
+: <a class="el" href="string__scoped__tracepoint_8h.html#a6e6dbe3ca598cbeff80900f3f79d54dd">string_scoped_tracepoint.h</a>
+</li>
 <li>HT_TP_FUNCTION
 : <a class="el" href="string__scoped__tracepoint_8h.html#ad07d7d83a2a98dbe7b5717cb87610aa7">string_scoped_tracepoint.h</a>
+</li>
+<li>HT_TP_G_DYN_STRACEPOINT
+: <a class="el" href="global__timeline_8h.html#a9bafb8272f4683d1272cf383867aecaa">global_timeline.h</a>
 </li>
 <li>HT_TP_G_FUNCTION
 : <a class="el" href="global__timeline_8h.html#a4aace26f0b57833fb043af52c682387a">global_timeline.h</a>

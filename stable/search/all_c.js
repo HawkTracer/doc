@@ -1,9 +1,7 @@
 var searchData=
 [
   ['macros_2eh',['macros.h',['../macros_8h.html',1,'']]],
-  ['max_5fsize',['max_size',['../struct_h_t___listener_buffer.html#aac9b63355599c107fb79a1757fdfa032',1,'HT_ListenerBuffer']]],
   ['memory_5fusage_2eh',['memory_usage.h',['../memory__usage_8h.html',1,'']]],
-  ['min_5fcapacity',['min_capacity',['../struct_h_t___stack.html#ae3384e9794a2973e305accb2440b443f',1,'HT_Stack']]],
   ['mkcreflect_2eh',['mkcreflect.h',['../mkcreflect_8h.html',1,'']]],
   ['mkcreflect_5farray_5ffield_5finfo_5f',['MKCREFLECT_ARRAY_FIELD_INFO_',['../mkcreflect_8h.html#a2b969b9d3d7771cb1f479a6182f74c62',1,'mkcreflect.h']]],
   ['mkcreflect_5fdeclare_5farray_5ffield_5f',['MKCREFLECT_DECLARE_ARRAY_FIELD_',['../mkcreflect_8h.html#a6696489c03d77495f9a5b71dcf6922b3',1,'mkcreflect.h']]],
@@ -73,6 +71,5 @@ var searchData=
   ['mkcreflect_5ftypes_5fpointer',['MKCREFLECT_TYPES_POINTER',['../mkcreflect_8h.html#aaf5c2eb3b416418077c321e0e8d53f19a4c936f1cdfec2c05fe9ae9cd0aa41edd',1,'mkcreflect.h']]],
   ['mkcreflect_5ftypes_5fstring',['MKCREFLECT_TYPES_STRING',['../mkcreflect_8h.html#aaf5c2eb3b416418077c321e0e8d53f19a63acfa309e5638acfb55d5a6ec43c0bf',1,'mkcreflect.h']]],
   ['mkcreflect_5ftypes_5fstruct',['MKCREFLECT_TYPES_STRUCT',['../mkcreflect_8h.html#aaf5c2eb3b416418077c321e0e8d53f19a68c3c74041024020542b7229bb3cc42b',1,'mkcreflect.h']]],
-  ['monotonic_5fclock_2eh',['monotonic_clock.h',['../monotonic__clock_8h.html',1,'']]],
-  ['mutex_2eh',['mutex.h',['../mutex_8h.html',1,'']]]
+  ['monotonic_5fclock_2eh',['monotonic_clock.h',['../monotonic__clock_8h.html',1,'']]]
 ];

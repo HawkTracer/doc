@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['type_5finfo',['type_info',['../struct___h_t___event_klass.html#a00ac8c7ee0b9253c305825e284f4a404',1,'_HT_EventKlass']]]
+  ['version_5fmajor',['version_major',['../core__events_8h.html#a22266fffd7247416f3918aef00c312f7',1,'core_events.h']]],
+  ['version_5fminor',['version_minor',['../core__events_8h.html#abe185df9ddc65a2eb11df546b29ed7f1',1,'core_events.h']]]
 ];

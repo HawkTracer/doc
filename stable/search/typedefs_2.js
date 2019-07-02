@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['onclientconnected',['OnClientConnected',['../tcp__server_8h.html#ac0a08eb73218e4bb3a795c546c6bb4c2',1,'tcp_server.h']]]
+  ['teventptr',['TEventPtr',['../base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17',1,'base_types.h']]]
 ];

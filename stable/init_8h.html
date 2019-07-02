@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: /home/loganek/repos/hawktracer/lib/include/hawktracer/init.h File Reference</title>
+<title>HawkTracer: /Users/mkolny/hawktracer/lib/include/hawktracer/init.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('init_8h.html','');});
 <div class="title">init.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="macros_8h_source.html">hawktracer/macros.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="base__types_8h_source.html">hawktracer/base_types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="macros_8h_source.html">hawktracer/macros.h</a>&gt;</code><br />
 </div>
 <p><a href="init_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -104,6 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d68c4a85e1f256ac65b382f5aa6fea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a7d68c4a85e1f256ac65b382f5aa6fea3">ht_deinit</a> (void)</td></tr>
 <tr class="memdesc:a7d68c4a85e1f256ac65b382f5aa6fea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uninitializes <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library.  <a href="#a7d68c4a85e1f256ac65b382f5aa6fea3">More...</a><br /></td></tr>
 <tr class="separator:a7d68c4a85e1f256ac65b382f5aa6fea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1574f53e8440bfe4b5dd13b0df615171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init_8h.html#a1574f53e8440bfe4b5dd13b0df615171">ht_is_initialized</a> (void)</td></tr>
+<tr class="memdesc:a1574f53e8440bfe4b5dd13b0df615171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library is initialized.  <a href="#a1574f53e8440bfe4b5dd13b0df615171">More...</a><br /></td></tr>
+<tr class="separator:a1574f53e8440bfe4b5dd13b0df615171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7d68c4a85e1f256ac65b382f5aa6fea3"></a>
@@ -123,7 +127,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uninitializes <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library. </p>
-<p>This function must be called as a last function of the library in the program. The only exception is ht_timeline_deinit() which might be called after <a class="el" href="init_8h.html#a7d68c4a85e1f256ac65b382f5aa6fea3" title="Uninitializes HawkTracer library. ">ht_deinit()</a>, however, it's highly not recommended and should be avoided when possible. </p>
+<p>This function must be called as a last function of the library in the program. The only exception is ht_timeline_deinit() which might be called after <a class="el" href="init_8h.html#a7d68c4a85e1f256ac65b382f5aa6fea3" title="Uninitializes HawkTracer library. ">ht_deinit()</a>, however, it's highly not recommended and should be avoided when possible.</p>
+<p>This function is not thread-safe, i.e. it must not be called from two different threads at the same time. </p>
 
 </div>
 </div>
@@ -155,6 +160,8 @@ Functions</h2></td></tr>
 
 <p>Initializes <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library. </p>
 <p>This function must be called before any other function from this library. The only exception is <a class="el" href="alloc_8h.html#a732f04746b15e5605323d555971c0713" title="Sets a global allocator for HawkTracer library. ">ht_allocator_set()</a>, which must be called before <a class="el" href="init_8h.html#ace9a4e991b289c1a887b74aa4cba2036" title="Initializes HawkTracer library. ">ht_init()</a>.</p>
+<p>The function can be called multiple times, but only the first call initializes the library. All the other calls don't have any effect.</p>
+<p>This function is not thread-safe, i.e. it must not be called from two different threads at the same time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td>a number of arguments of the <em>argv</em> array. </td></tr>
@@ -162,6 +169,27 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1574f53e8440bfe4b5dd13b0df615171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1574f53e8440bfe4b5dd13b0df615171">&#9670;&nbsp;</a></span>ht_is_initialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> ht_is_initialized </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library is initialized. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a0d915bcf71f95c0c8738a3cb85078bf8" title="Defines true value for the HT_Boolean type. ">HT_TRUE</a>, if the library is initialized; otherwise, <a class="el" href="base__types_8h.html#af93826a1cb5919418789425c8b9a823e" title="Defines false value for the HT_Boolean type. ">HT_FALSE</a>. </dd></dl>
 
 </div>
 </div>

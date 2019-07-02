@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: /home/loganek/repos/hawktracer/lib/include/hawktracer/event_macros.h File Reference</title>
+<title>HawkTracer: /Users/mkolny/hawktracer/lib/include/hawktracer/event_macros.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('event__macros_8h.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="events_8h_source.html">hawktracer/events.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mkcreflect_8h_source.html">hawktracer/mkcreflect.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="hawktracer_2registry_8h_source.html">hawktracer/registry.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="registry_8h_source.html">hawktracer/registry.h</a>&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div>
 <p><a href="event__macros_8h_source.html">Go to the source code of this file.</a></p>
@@ -543,7 +543,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="base__types_8h.html#acece2ade55178ff476e9a20bb8d6baed">HT_EventKlassId</a> <a class="code" href="event__macros_8h.html#ae35a2ad0850d6b468f0d2ac481811747">HT_EVENT_REGISTER_KLASS_FUNCTION</a>(TYPE_NAME)(void) \</div><div class="line">    { \</div><div class="line">        HT_EVENT_GET_KLASS_INSTANCE_FUNCTION(TYPE_NAME)()-&gt;type_info = mkcreflect_get_##TYPE_NAME##_type_info(); \</div><div class="line">        return <a class="code" href="hawktracer_2registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">ht_registry_register_event_klass</a>(<a class="code" href="event__macros_8h.html#a7ee246a22b721918de678542bd3c3147">HT_EVENT_GET_KLASS_INSTANCE_FUNCTION</a>(TYPE_NAME)()); \</div><div class="line">    }</div><div class="ttc" id="hawktracer_2registry_8h_html_a600acd9beaa6ba0b1228f125e9c613a4"><div class="ttname"><a href="hawktracer_2registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">ht_registry_register_event_klass</a></div><div class="ttdeci">HT_API HT_EventKlassId ht_registry_register_event_klass(HT_EventKlass *event_klass)</div><div class="ttdoc">Registers new event klass in the system, or gets identifier if klass is already registered. </div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="base__types_8h.html#acece2ade55178ff476e9a20bb8d6baed">HT_EventKlassId</a> <a class="code" href="event__macros_8h.html#ae35a2ad0850d6b468f0d2ac481811747">HT_EVENT_REGISTER_KLASS_FUNCTION</a>(TYPE_NAME)(void) \</div><div class="line">    { \</div><div class="line">        HT_EVENT_GET_KLASS_INSTANCE_FUNCTION(TYPE_NAME)()-&gt;type_info = mkcreflect_get_##TYPE_NAME##_type_info(); \</div><div class="line">        return <a class="code" href="registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">ht_registry_register_event_klass</a>(<a class="code" href="event__macros_8h.html#a7ee246a22b721918de678542bd3c3147">HT_EVENT_GET_KLASS_INSTANCE_FUNCTION</a>(TYPE_NAME)()); \</div><div class="line">    }</div><div class="ttc" id="registry_8h_html_a600acd9beaa6ba0b1228f125e9c613a4"><div class="ttname"><a href="registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">ht_registry_register_event_klass</a></div><div class="ttdeci">HT_API HT_EventKlassId ht_registry_register_event_klass(HT_EventKlass *event_klass)</div><div class="ttdoc">Registers new event klass in the system, or gets identifier if klass is already registered. </div></div>
 <div class="ttc" id="base__types_8h_html_acece2ade55178ff476e9a20bb8d6baed"><div class="ttname"><a href="base__types_8h.html#acece2ade55178ff476e9a20bb8d6baed">HT_EventKlassId</a></div><div class="ttdeci">HT_DECLS_BEGIN typedef uint32_t HT_EventKlassId</div><div class="ttdoc">An unsigned integer used for event klass identifiers. </div><div class="ttdef"><b>Definition:</b> base_types.h:12</div></div>
 <div class="ttc" id="event__macros_8h_html_a7ee246a22b721918de678542bd3c3147"><div class="ttname"><a href="event__macros_8h.html#a7ee246a22b721918de678542bd3c3147">HT_EVENT_GET_KLASS_INSTANCE_FUNCTION</a></div><div class="ttdeci">#define HT_EVENT_GET_KLASS_INSTANCE_FUNCTION(C_TYPE)</div><div class="ttdef"><b>Definition:</b> event_macros.h:13</div></div>
 <div class="ttc" id="event__macros_8h_html_ae35a2ad0850d6b468f0d2ac481811747"><div class="ttname"><a href="event__macros_8h.html#ae35a2ad0850d6b468f0d2ac481811747">HT_EVENT_REGISTER_KLASS_FUNCTION</a></div><div class="ttdeci">#define HT_EVENT_REGISTER_KLASS_FUNCTION(C_TYPE)</div><div class="ttdef"><b>Definition:</b> event_macros.h:12</div></div>

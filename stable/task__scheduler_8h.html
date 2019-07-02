@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: /home/loganek/repos/hawktracer/lib/include/hawktracer/task_scheduler.h File Reference</title>
+<title>HawkTracer: /Users/mkolny/hawktracer/lib/include/hawktracer/task_scheduler.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -111,8 +111,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a1fc7d62f13c82af1178365abbb6342a6"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6">HT_TaskId</a></td></tr>
 <tr class="memdesc:a1fc7d62f13c82af1178365abbb6342a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A task scheduler's task identifier.  <a href="#a1fc7d62f13c82af1178365abbb6342a6">More...</a><br /></td></tr>
 <tr class="separator:a1fc7d62f13c82af1178365abbb6342a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4145a54e96574c3f28fc2f31a0a37f8e"><td class="memItemLeft" align="right" valign="top">typedef struct _HT_Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a4145a54e96574c3f28fc2f31a0a37f8e">HT_Task</a></td></tr>
-<tr class="separator:a4145a54e96574c3f28fc2f31a0a37f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b9cea6cdf314444f150a22d65d4b961"><td class="memItemLeft" align="right" valign="top">typedef struct _HT_TaskScheduler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961">HT_TaskScheduler</a></td></tr>
 <tr class="separator:a8b9cea6cdf314444f150a22d65d4b961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -132,7 +130,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aad0c934c2cd8b4e4b5541f1c4403a1f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#aad0c934c2cd8b4e4b5541f1c4403a1f6">ht_task_scheduler_destroy</a> (<a class="el" href="task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961">HT_TaskScheduler</a> *task_scheduler)</td></tr>
 <tr class="memdesc:aad0c934c2cd8b4e4b5541f1c4403a1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys task scheduler data structure.  <a href="#aad0c934c2cd8b4e4b5541f1c4403a1f6">More...</a><br /></td></tr>
 <tr class="separator:aad0c934c2cd8b4e4b5541f1c4403a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274e0071217d36af2cbef96fd1208535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6">HT_TaskId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a274e0071217d36af2cbef96fd1208535">ht_task_scheduler_schedule_task</a> (<a class="el" href="task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961">HT_TaskScheduler</a> *task_scheduler, <a class="el" href="task__scheduler_8h.html#a3f8c7ed1092d06e262f41c5b74a2d3ed">HT_TaskSchedulingMode</a> mode, <a class="el" href="base__types_8h.html#a8b3c02d4fb909fa0c37dfe5acb4b95ab">HT_DurationNs</a> period, <a class="el" href="task__scheduler_8h.html#a145b7316ff9f19f08cd8888f42e27f49">HT_TaskCallback</a> callback, void *user_data)</td></tr>
+<tr class="memitem:a274e0071217d36af2cbef96fd1208535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6">HT_TaskId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a274e0071217d36af2cbef96fd1208535">ht_task_scheduler_schedule_task</a> (<a class="el" href="task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961">HT_TaskScheduler</a> *task_scheduler, <a class="el" href="task__scheduler_8h.html#a3f8c7ed1092d06e262f41c5b74a2d3ed">HT_TaskSchedulingMode</a> mode, <a class="el" href="base__types_8h.html#a8b3c02d4fb909fa0c37dfe5acb4b95ab">HT_DurationNs</a> period, <a class="el" href="task__scheduler_8h.html#a51dffc8757a813907fc3342595c4df8f">HT_TaskCallback</a> callback, void *user_data)</td></tr>
 <tr class="memdesc:a274e0071217d36af2cbef96fd1208535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new task to a scheduler.  <a href="#a274e0071217d36af2cbef96fd1208535">More...</a><br /></td></tr>
 <tr class="separator:a274e0071217d36af2cbef96fd1208535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d21bbee0826b9f28fbbe361a1afdd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#ab3d21bbee0826b9f28fbbe361a1afdd1">ht_task_scheduler_remove_task</a> (<a class="el" href="task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961">HT_TaskScheduler</a> *task_scheduler, <a class="el" href="task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6">HT_TaskId</a> task_id)</td></tr>
@@ -147,9 +145,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a145b7316ff9f19f08cd8888f42e27f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a145b7316ff9f19f08cd8888f42e27f49">HT_TaskCallback</a> )(void *user_data)</td></tr>
-<tr class="memdesc:a145b7316ff9f19f08cd8888f42e27f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">A task scheduler's callback.  <a href="#a145b7316ff9f19f08cd8888f42e27f49">More...</a><br /></td></tr>
-<tr class="separator:a145b7316ff9f19f08cd8888f42e27f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dffc8757a813907fc3342595c4df8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task__scheduler_8h.html#a51dffc8757a813907fc3342595c4df8f">HT_TaskCallback</a> )(void *user_data)</td></tr>
+<tr class="memdesc:a51dffc8757a813907fc3342595c4df8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A task scheduler's callback.  <a href="#a51dffc8757a813907fc3342595c4df8f">More...</a><br /></td></tr>
+<tr class="separator:a51dffc8757a813907fc3342595c4df8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a42ba447adbe23bfd80a43543235935e9"></a>
@@ -169,20 +167,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a4145a54e96574c3f28fc2f31a0a37f8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4145a54e96574c3f28fc2f31a0a37f8e">&#9670;&nbsp;</a></span>HT_Task</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct _HT_Task <a class="el" href="task__scheduler_8h.html#a4145a54e96574c3f28fc2f31a0a37f8e">HT_Task</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1fc7d62f13c82af1178365abbb6342a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fc7d62f13c82af1178365abbb6342a6">&#9670;&nbsp;</a></span>HT_TaskId</h2>
 
@@ -384,7 +368,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="task__scheduler_8h.html#a145b7316ff9f19f08cd8888f42e27f49">HT_TaskCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="task__scheduler_8h.html#a51dffc8757a813907fc3342595c4df8f">HT_TaskCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -449,19 +433,20 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a145b7316ff9f19f08cd8888f42e27f49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a145b7316ff9f19f08cd8888f42e27f49">&#9670;&nbsp;</a></span>HT_TaskCallback</h2>
+<a id="a51dffc8757a813907fc3342595c4df8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51dffc8757a813907fc3342595c4df8f">&#9670;&nbsp;</a></span>HT_TaskCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(* HT_TaskCallback) (void *user_data)</td>
+          <td class="memname"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a>(* HT_TaskCallback) (void *user_data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>A task scheduler's callback. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a0d915bcf71f95c0c8738a3cb85078bf8" title="Defines true value for the HT_Boolean type. ">HT_TRUE</a> if the task should be re-scheduled, or <a class="el" href="base__types_8h.html#af93826a1cb5919418789425c8b9a823e" title="Defines false value for the HT_Boolean type. ">HT_FALSE</a> if the task should be removed from scheduler after executing it. </dd></dl>
 
 </div>
 </div>

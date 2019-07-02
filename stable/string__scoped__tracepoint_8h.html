@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: /home/loganek/repos/hawktracer/lib/include/hawktracer/string_scoped_tracepoint.h File Reference</title>
+<title>HawkTracer: /Users/mkolny/hawktracer/lib/include/hawktracer/string_scoped_tracepoint.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -102,10 +102,40 @@ $(document).ready(function(){initNavTree('string__scoped__tracepoint_8h.html',''
 Macros</h2></td></tr>
 <tr class="memitem:a0ec91e19e84be10581efb391397eca87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#a0ec91e19e84be10581efb391397eca87">HT_TP_STRACEPOINT</a>(timeline,  label)</td></tr>
 <tr class="separator:a0ec91e19e84be10581efb391397eca87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6dbe3ca598cbeff80900f3f79d54dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#a6e6dbe3ca598cbeff80900f3f79d54dd">HT_TP_DYN_STRACEPOINT</a>(timeline,  label)&#160;&#160;&#160;<a class="el" href="scoped__tracepoint_8h.html#a826ff4397ce3edede8cf65290c827387">HT_TP_SCOPED_INT</a>(timeline, (uintptr_t)ht_feature_cached_string_add_mapping_dynamic(timeline, label));</td></tr>
+<tr class="separator:a6e6dbe3ca598cbeff80900f3f79d54dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad07d7d83a2a98dbe7b5717cb87610aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#ad07d7d83a2a98dbe7b5717cb87610aa7">HT_TP_FUNCTION</a>(timeline)&#160;&#160;&#160;<a class="el" href="string__scoped__tracepoint_8h.html#a0ec91e19e84be10581efb391397eca87">HT_TP_STRACEPOINT</a>(timeline, __func__)</td></tr>
 <tr class="separator:ad07d7d83a2a98dbe7b5717cb87610aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6e6dbe3ca598cbeff80900f3f79d54dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6dbe3ca598cbeff80900f3f79d54dd">&#9670;&nbsp;</a></span>HT_TP_DYN_STRACEPOINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HT_TP_DYN_STRACEPOINT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">timeline, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">label&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="scoped__tracepoint_8h.html#a826ff4397ce3edede8cf65290c827387">HT_TP_SCOPED_INT</a>(timeline, (uintptr_t)ht_feature_cached_string_add_mapping_dynamic(timeline, label));</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad07d7d83a2a98dbe7b5717cb87610aa7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad07d7d83a2a98dbe7b5717cb87610aa7">&#9670;&nbsp;</a></span>HT_TP_FUNCTION</h2>
 
@@ -149,9 +179,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="macros_8h.html#a28d0eb6eaca9432a360610a2806902f9">HT_THREAD_LOCAL</a> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a>(fnc_track) = <a class="code" href="feature__cached__string_8h.html#abcdc7262da1ee386007bfe4366891094">ht_feature_cached_string_add_mapping</a>(timeline, label); \</div><div class="line">    HT_TP_SCOPED_INT(timeline, (uintptr_t)<a class="code" href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a>(fnc_track));</div><div class="ttc" id="macros_8h_html_a9c61d051f8614a91e8bd7723e6bd51c9"><div class="ttname"><a href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a></div><div class="ttdeci">#define HT_UNIQUE_VAR_NAME(BASE_VAR_NAME)</div><div class="ttdoc">Creates unique variable name by appending a line number to a base name. </div><div class="ttdef"><b>Definition:</b> macros.h:85</div></div>
-<div class="ttc" id="feature__cached__string_8h_html_abcdc7262da1ee386007bfe4366891094"><div class="ttname"><a href="feature__cached__string_8h.html#abcdc7262da1ee386007bfe4366891094">ht_feature_cached_string_add_mapping</a></div><div class="ttdeci">HT_API const char * ht_feature_cached_string_add_mapping(HT_Timeline *timeline, const char *label)</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code" href="macros_8h.html#a28d0eb6eaca9432a360610a2806902f9">HT_THREAD_LOCAL</a> uintptr_t <a class="code" href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a>(fnc_track) = <a class="code" href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee">ht_feature_cached_string_add_mapping</a>(timeline, label); \</div><div class="line">    HT_TP_SCOPED_INT(timeline, (uintptr_t)<a class="code" href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a>(fnc_track));</div><div class="ttc" id="macros_8h_html_a9c61d051f8614a91e8bd7723e6bd51c9"><div class="ttname"><a href="macros_8h.html#a9c61d051f8614a91e8bd7723e6bd51c9">HT_UNIQUE_VAR_NAME</a></div><div class="ttdeci">#define HT_UNIQUE_VAR_NAME(BASE_VAR_NAME)</div><div class="ttdoc">Creates unique variable name by appending a line number to a base name. </div><div class="ttdef"><b>Definition:</b> macros.h:85</div></div>
 <div class="ttc" id="macros_8h_html_a28d0eb6eaca9432a360610a2806902f9"><div class="ttname"><a href="macros_8h.html#a28d0eb6eaca9432a360610a2806902f9">HT_THREAD_LOCAL</a></div><div class="ttdeci">#define HT_THREAD_LOCAL</div><div class="ttdoc">A thread storage duration. </div><div class="ttdef"><b>Definition:</b> macros.h:92</div></div>
+<div class="ttc" id="feature__cached__string_8h_html_a5faeace9dbb85575ef7c2b1ca89158ee"><div class="ttname"><a href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee">ht_feature_cached_string_add_mapping</a></div><div class="ttdeci">HT_API uintptr_t ht_feature_cached_string_add_mapping(HT_Timeline *timeline, const char *label)</div></div>
 </div><!-- fragment -->
 </div>
 </div>

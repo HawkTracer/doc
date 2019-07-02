@@ -5,7 +5,7 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "alloc_hooks.h", "alloc__hooks_8h.html", null ],
     [ "base_types.h", "base__types_8h.html", "base__types_8h" ],
     [ "core_events.h", "core__events_8h.html", "core__events_8h" ],
-    [ "cpu_usage.h", "cpu__usage_8h.html", null ],
+    [ "cpu_usage.h", "cpu__usage_8h.html", "cpu__usage_8h" ],
     [ "duration_conversion.h", "duration__conversion_8h.html", "duration__conversion_8h" ],
     [ "event_id_provider.h", "event__id__provider_8h.html", "event__id__provider_8h" ],
     [ "event_macros.h", "event__macros_8h.html", "event__macros_8h" ],
@@ -17,11 +17,11 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "init.h", "init_8h.html", "init_8h" ],
     [ "listeners.h", "listeners_8h.html", null ],
     [ "macros.h", "macros_8h.html", "macros_8h" ],
-    [ "memory_usage.h", "memory__usage_8h.html", null ],
+    [ "memory_usage.h", "memory__usage_8h.html", "memory__usage_8h" ],
     [ "mkcreflect.h", "mkcreflect_8h.html", "mkcreflect_8h" ],
     [ "monotonic_clock.h", "monotonic__clock_8h.html", "monotonic__clock_8h" ],
     [ "posix_mapped_tracepoint.h", "posix__mapped__tracepoint_8h.html", "posix__mapped__tracepoint_8h" ],
-    [ "registry.h", "hawktracer_2registry_8h.html", "hawktracer_2registry_8h" ],
+    [ "registry.h", "registry_8h.html", "registry_8h" ],
     [ "scoped_tracepoint.h", "scoped__tracepoint_8h.html", "scoped__tracepoint_8h" ],
     [ "scoped_tracepoint.hpp", "scoped__tracepoint_8hpp.html", [
       [ "ScopedTracepoint", "class_hawk_tracer_1_1_scoped_tracepoint.html", "class_hawk_tracer_1_1_scoped_tracepoint" ]
