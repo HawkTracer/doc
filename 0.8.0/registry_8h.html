@@ -109,6 +109,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4d4d40e6ca20f3ccabb9a99a820d27e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes information about registered event klasses (HT_EventKlassInfoEvent and HT_EventKlassFieldInfoEvent events) directly to a listener.  <a href="#a4d4d40e6ca20f3ccabb9a99a820d27e7">More...</a><br /></td></tr>
 <tr class="separator:a4d4d40e6ca20f3ccabb9a99a820d27e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028328a4814cefc13f248fef70ca88dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="events_8h.html#a1631a98c9a02156621cda6998d864eb0">HT_EventKlass</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#a028328a4814cefc13f248fef70ca88dd">ht_registry_get_event_klasses</a> (size_t *out_klass_count)</td></tr>
+<tr class="memdesc:a028328a4814cefc13f248fef70ca88dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all the klasses registered in <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library.  <a href="#a028328a4814cefc13f248fef70ca88dd">More...</a><br /></td></tr>
 <tr class="separator:a028328a4814cefc13f248fef70ca88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -133,6 +134,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns a list of all the klasses registered in <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out_klass_count</td><td>a pointer to variable to store number of klasses.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an array of all the event klasses registered in the library. </dd></dl>
 
 </div>
 </div>
