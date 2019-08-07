@@ -87,8 +87,8 @@ $(document).ready(function(){initNavTree('timeline__listener_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">timeline_listener.h File Reference</div>  </div>
 </div><!--header-->
@@ -98,48 +98,18 @@ $(document).ready(function(){initNavTree('timeline__listener_8h.html','');});
 </div>
 <p><a href="timeline__listener_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ac5d332777f1e52f74a48c4f40e8add0c"><td class="memItemLeft" align="right" valign="top">typedef typedefHT_DECLS_BEGIN struct _HT_TimelineListenerContainer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline__listener_8h.html#ac5d332777f1e52f74a48c4f40e8add0c">HT_TimelineListenerContainer</a></td></tr>
-<tr class="separator:ac5d332777f1e52f74a48c4f40e8add0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792da38092f02673cd629d1acfffeca8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a>) (<a class="el" href="base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17">TEventPtr</a> events, size_t event_count, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialized, void *user_data)</td></tr>
-<tr class="separator:a792da38092f02673cd629d1acfffeca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2cff3c1f5b80386f2b9518442a542dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline__listener_8h.html#a2cff3c1f5b80386f2b9518442a542dea">ht_timeline_listener_push_metadata</a> (<a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a> callback, void *listener, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialize)</td></tr>
+<tr class="memitem:a2cff3c1f5b80386f2b9518442a542dea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline__listener_8h.html#a2cff3c1f5b80386f2b9518442a542dea">ht_timeline_listener_push_metadata</a> (<a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a> callback, void *listener, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialize)</td></tr>
 <tr class="memdesc:a2cff3c1f5b80386f2b9518442a542dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes all metadata events (registry klasses, system information) to a listener.  <a href="#a2cff3c1f5b80386f2b9518442a542dea">More...</a><br /></td></tr>
 <tr class="separator:a2cff3c1f5b80386f2b9518442a542dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:acdd335c36349dd9465f1ac4c6a22d3e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a> )(<a class="el" href="base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17">TEventPtr</a> events, size_t buffer_size, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialized, void *user_data)</td></tr>
+<tr class="memdesc:acdd335c36349dd9465f1ac4c6a22d3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback for the timeline listener.  <a href="#acdd335c36349dd9465f1ac4c6a22d3e2">More...</a><br /></td></tr>
+<tr class="separator:acdd335c36349dd9465f1ac4c6a22d3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a792da38092f02673cd629d1acfffeca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a792da38092f02673cd629d1acfffeca8">&#9670;&nbsp;</a></span>HT_TimelineListenerCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* HT_TimelineListenerCallback) (<a class="el" href="base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17">TEventPtr</a> events, size_t event_count, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialized, void *user_data)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac5d332777f1e52f74a48c4f40e8add0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d332777f1e52f74a48c4f40e8add0c">&#9670;&nbsp;</a></span>HT_TimelineListenerContainer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef typedefHT_DECLS_BEGIN struct _HT_TimelineListenerContainer <a class="el" href="timeline__listener_8h.html#ac5d332777f1e52f74a48c4f40e8add0c">HT_TimelineListenerContainer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2cff3c1f5b80386f2b9518442a542dea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2cff3c1f5b80386f2b9518442a542dea">&#9670;&nbsp;</a></span>ht_timeline_listener_push_metadata()</h2>
@@ -150,7 +120,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> size_t ht_timeline_listener_push_metadata </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8">HT_TimelineListenerCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -183,6 +153,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of bytes which have been pushed to a listener. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="acdd335c36349dd9465f1ac4c6a22d3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd335c36349dd9465f1ac4c6a22d3e2">&#9670;&nbsp;</a></span>HT_TimelineListenerCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(* HT_TimelineListenerCallback) (<a class="el" href="base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17">TEventPtr</a> events, size_t buffer_size, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialized, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A callback for the timeline listener. </p>
+<p>The callback gets called whenever the internal timeline buffer gets flushed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">events</td><td>an event buffer containing serialized or non-serialized events. </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>a size of the <em>events</em> buffer. </td></tr>
+    <tr><td class="paramname">serialized</td><td>indicates whether events in the <em>events</em> buffer are serialized or not. </td></tr>
+    <tr><td class="paramname">user_data</td><td>a pointer to object that was passed on listener registration. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

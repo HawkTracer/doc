@@ -15,7 +15,5 @@ var searchData=
   ['ht_5ftcplistener',['HT_TCPListener',['../tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5',1,'tcp_listener.h']]],
   ['ht_5fthreadid',['HT_ThreadId',['../base__types_8h.html#a794d6081d06de36ce1b6606917d2aee1',1,'base_types.h']]],
   ['ht_5ftimeline',['HT_Timeline',['../timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f',1,'timeline.h']]],
-  ['ht_5ftimelinelistenercallback',['HT_TimelineListenerCallback',['../timeline__listener_8h.html#a792da38092f02673cd629d1acfffeca8',1,'timeline_listener.h']]],
-  ['ht_5ftimelinelistenercontainer',['HT_TimelineListenerContainer',['../timeline__listener_8h.html#ac5d332777f1e52f74a48c4f40e8add0c',1,'timeline_listener.h']]],
   ['ht_5ftimestampns',['HT_TimestampNs',['../base__types_8h.html#aa304d120184a3d79d145f9521a3025d5',1,'base_types.h']]]
 ];

@@ -101,10 +101,13 @@ $(document).ready(function(){initNavTree('string__scoped__tracepoint_8h.html',''
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a0ec91e19e84be10581efb391397eca87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#a0ec91e19e84be10581efb391397eca87">HT_TP_STRACEPOINT</a>(timeline,  label)</td></tr>
+<tr class="memdesc:a0ec91e19e84be10581efb391397eca87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tracepoint that measures time spent in the scope.  <a href="#a0ec91e19e84be10581efb391397eca87">More...</a><br /></td></tr>
 <tr class="separator:a0ec91e19e84be10581efb391397eca87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6dbe3ca598cbeff80900f3f79d54dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#a6e6dbe3ca598cbeff80900f3f79d54dd">HT_TP_DYN_STRACEPOINT</a>(timeline,  label)&#160;&#160;&#160;<a class="el" href="scoped__tracepoint_8h.html#a826ff4397ce3edede8cf65290c827387">HT_TP_SCOPED_INT</a>(timeline, (uintptr_t)ht_feature_cached_string_add_mapping_dynamic(timeline, label));</td></tr>
+<tr class="memdesc:a6e6dbe3ca598cbeff80900f3f79d54dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tracepoint that measures time spent in the scope.  <a href="#a6e6dbe3ca598cbeff80900f3f79d54dd">More...</a><br /></td></tr>
 <tr class="separator:a6e6dbe3ca598cbeff80900f3f79d54dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad07d7d83a2a98dbe7b5717cb87610aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__scoped__tracepoint_8h.html#ad07d7d83a2a98dbe7b5717cb87610aa7">HT_TP_FUNCTION</a>(timeline)&#160;&#160;&#160;<a class="el" href="string__scoped__tracepoint_8h.html#a0ec91e19e84be10581efb391397eca87">HT_TP_STRACEPOINT</a>(timeline, __func__)</td></tr>
+<tr class="memdesc:ad07d7d83a2a98dbe7b5717cb87610aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a tracepoint that measures time spent in the function.  <a href="#ad07d7d83a2a98dbe7b5717cb87610aa7">More...</a><br /></td></tr>
 <tr class="separator:ad07d7d83a2a98dbe7b5717cb87610aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -134,6 +137,16 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Creates a tracepoint that measures time spent in the scope. </p>
+<p>This method is slower than <a class="el" href="string__scoped__tracepoint_8h.html#a0ec91e19e84be10581efb391397eca87" title="Creates a tracepoint that measures time spent in the scope. ">HT_TP_STRACEPOINT()</a>, but allows user to use dynamic strings for label.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>a timeline where the event will be posted to. </td></tr>
+    <tr><td class="paramname">label</td><td>a string label of the tracepoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad07d7d83a2a98dbe7b5717cb87610aa7"></a>
@@ -151,6 +164,15 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generates a tracepoint that measures time spent in the function. </p>
+<p>The macro shoudl be called as a first instruction of the traced function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>a timeline where the event will be posted to. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -183,6 +205,16 @@ Macros</h2></td></tr>
 <div class="ttc" id="macros_8h_html_a28d0eb6eaca9432a360610a2806902f9"><div class="ttname"><a href="macros_8h.html#a28d0eb6eaca9432a360610a2806902f9">HT_THREAD_LOCAL</a></div><div class="ttdeci">#define HT_THREAD_LOCAL</div><div class="ttdoc">A thread storage duration. </div><div class="ttdef"><b>Definition:</b> macros.h:92</div></div>
 <div class="ttc" id="feature__cached__string_8h_html_a5faeace9dbb85575ef7c2b1ca89158ee"><div class="ttname"><a href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee">ht_feature_cached_string_add_mapping</a></div><div class="ttdeci">HT_API uintptr_t ht_feature_cached_string_add_mapping(HT_Timeline *timeline, const char *label)</div></div>
 </div><!-- fragment -->
+<p>Creates a tracepoint that measures time spent in the scope. </p>
+<p>The label must be a static string. If it's not, use <a class="el" href="string__scoped__tracepoint_8h.html#a6e6dbe3ca598cbeff80900f3f79d54dd" title="Creates a tracepoint that measures time spent in the scope. ">HT_TP_DYN_STRACEPOINT()</a> instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>a timeline where the event will be posted to. </td></tr>
+    <tr><td class="paramname">label</td><td>a string label of the tracepoint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->

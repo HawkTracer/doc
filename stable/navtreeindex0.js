@@ -79,9 +79,12 @@ var NAVTREEINDEX0 =
 "cpu__usage_8h.html#a9d02cdfc1f1aace5ee7512f5c730f3c5":[7,0,0,0,0,5,2],
 "cpu__usage_8h_source.html":[7,0,0,0,0,5],
 "design.html":[3],
-"design_client.html":[3,1],
-"design_htdump_format.html":[3,2],
+"design_client.html":[3,4],
+"design_events.html":[3,1],
+"design_features.html":[3,3],
+"design_htdump_format.html":[3,5],
 "design_library.html":[3,0],
+"design_timeline.html":[3,2],
 "dir_1664bd36a745a898ec6d2a8359b7e115.html":[7,0,0,0,0],
 "dir_3c16dda534b74afc10ce5b4e114bcc7b.html":[7,0,0,0,0,0],
 "dir_5a30104352ef4255dc24354b02eb2d20.html":[7,0,0,0],
@@ -171,6 +174,7 @@ var NAVTREEINDEX0 =
 "file__dump__listener_8h.html":[7,0,0,0,0,0,0],
 "file__dump__listener_8h.html#a0e18582f0f6ab84931d6e1f860cc2139":[7,0,0,0,0,0,0,3],
 "file__dump__listener_8h.html#a1cb873c2d83b138acee4e01de7c22f45":[7,0,0,0,0,0,0,0],
+"file__dump__listener_8h.html#a3362ed058dce7a51c2b5814f03e8909a":[7,0,0,0,0,0,0,4],
 "file__dump__listener_8h.html#a73041ad8ac5ac9d2f0e7ef06f91725be":[7,0,0,0,0,0,0,1],
 "file__dump__listener_8h.html#aefa1e7e894314b3a37c4861d9c5fa1b0":[7,0,0,0,0,0,0,2],
 "file__dump__listener_8h_source.html":[7,0,0,0,0,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "mkcreflect_8h.html#a1d456b0254f149c9eeed94d91738b6bf":[7,0,0,0,0,18,43],
 "mkcreflect_8h.html#a1ede9636763e28f22eecbaf787304779":[7,0,0,0,0,18,36],
 "mkcreflect_8h.html#a26fa5a3a3524967b05302d7356ff4119":[7,0,0,0,0,18,45],
-"mkcreflect_8h.html#a27014eb7324f7489dd2e13f32feb6297":[7,0,0,0,0,18,5],
-"mkcreflect_8h.html#a295b021f558b67dcefe78cfc3b625593":[7,0,0,0,0,18,12],
-"mkcreflect_8h.html#a2b969b9d3d7771cb1f479a6182f74c62":[7,0,0,0,0,18,2],
-"mkcreflect_8h.html#a2dfdc4392a0e825e4e8a30e26d22ebe4":[7,0,0,0,0,18,55],
-"mkcreflect_8h.html#a31c64f067b078cec5fbff284e75f1dce":[7,0,0,0,0,18,19]
+"mkcreflect_8h.html#a27014eb7324f7489dd2e13f32feb6297":[7,0,0,0,0,18,5]
 };
