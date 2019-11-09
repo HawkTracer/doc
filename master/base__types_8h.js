@@ -24,7 +24,9 @@ var base__types_8h =
       [ "HT_ERR_CANT_START_TCP_SERVER", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a6dcae62f82fe777462dd1cb873140754", null ],
       [ "HT_ERR_CANT_CREATE_LISTENER_CONTAINER", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a209e96f1575041bc3e97a6f5f0848388", null ],
       [ "HT_ERR_INVALID_FORMAT", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af0c81e3ef620711a9f6e240095529d6a", null ],
-      [ "HT_ERR_INVALID_ARGUMENT", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a965bcfd1b2c163ec8962ce1b56f38eb4", null ]
+      [ "HT_ERR_INVALID_ARGUMENT", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a965bcfd1b2c163ec8962ce1b56f38eb4", null ],
+      [ "HT_ERR_OUT_OF_RANGE", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2afff565107489af0cfd5658dbcc3b33f1", null ],
+      [ "HT_ERR_MISSING_ARGUMENT", "base__types_8h.html#a33d648be4499dad0fed381138f28b6a2aad0defc28c74ad6d93d59920790fa9a5", null ]
     ] ],
     [ "HT_MKCREFLECT_Types_Ext", "base__types_8h.html#ac636f0343cc4524378a8af8908fe9e4c", [
       [ "HT_MKCREFLECT_TYPES_EXT_STRUCT", "base__types_8h.html#ac636f0343cc4524378a8af8908fe9e4cae988fe6dba55dc7b9ff1161169ef326f", null ],
