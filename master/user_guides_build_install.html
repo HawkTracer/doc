@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HawkTracer: Main Page</title>
+<title>HawkTracer: Build and Install</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('user_guides_build_install.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -81,42 +81,23 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">HawkTracer Documentation</div>  </div>
+<div class="title">Build and Install </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>HawkTracer is a highly portable, low-overhead, configurable profiling tool built in Amazon Video for getting performance metrics from low-end devices.</p>
-<p>HawkTracer is available on most popular platforms: Linux, Windows, OS X. The library can be used with C and C++.</p>
-<p>The library provides many different types of events (e.g. CPU usage event, duration tracepoint), but the list can easily be extended by the user.</p>
-<h2>General</h2>
-<ul>
-<li><a class="el" href="user_guides.html">User guides</a><ul>
-<li><a class="el" href="user_guides_build_install.html">Build and Install</a></li>
-<li><a class="el" href="string_tracepoint_macros.html">String tracepoint macros</a></li>
-</ul>
-</li>
-<li><a class="el" href="tutorials.html">Tutorials</a></li>
-<li><a class="el" href="integration.html">Integrate HawkTracer to existing project</a></li>
-<li><a class="el" href="design.html">Design</a></li>
-<li><a class="el" href="faq.html">Frequently asked question</a></li>
-</ul>
-<h2>Core features</h2>
-<ul>
-<li>Multiplatform support: Linux, macOS, Windows</li>
-<li>Low CPU and memory overhead</li>
-<li>Easy integration with existing projects</li>
-<li>Simple macros for code instrumentation</li>
-<li>Streaming data over TCP/IP protocol or saving them to a file</li>
-</ul>
-<h2>Community</h2>
-<p>Currently the only way to contact the community is to join the Gitter channel <a href="https://gitter.im/amzn/hawktracer">amzn/hawktracer</a>.</p>
-<p>For feature requests or bug reports, please use <a href="https://github.com/amzn/hawktracer/issues/new">GitHub form</a>.</p>
-<h2>Development</h2>
-<p>All development on HawkTracer is done on the <a href="https://github.com/amzn/hawktracer">GitHub project</a>. Instructions for contributing can be found on the <a class="el" href="md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html">Contributing Guidelines</a> page. </p>
+<div class="textblock"><h2>Downloading source code</h2>
+<p>Source code is hosted on GitHub servers. To download the code, just run following command: </p><div class="fragment"><div class="line">git clone https://github.com/amzn/hawktracer.git</div></div><!-- fragment --><p> You can also download a tarball for a specific release. All the available releases and their tarballs can be found on <a href="https://github.com/amzn/hawktracer//releases">the release page</a>.</p>
+<h2>Compilation</h2>
+<p>HawkTracer uses <a href="https://cmake.org">CMake</a> for managing the build process. To configure the project and compile it, run following code in the source code directory: </p><div class="fragment"><div class="line">mkdir build     # create build directory</div><div class="line">cd build        # change current directory to &#39;build&#39;</div><div class="line">cmake ..        # configure the project</div><div class="line">cmake --build . # compile the project</div></div><!-- fragment --><p> It'll configure the project and builds <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> libraries.</p>
+<p>Please note that HawkTracer provides many configuration options, e.g. in order to build static libraries, run: </p><div class="fragment"><div class="line">cmake .. -DBUILD_STATIC_LIB=ON</div></div><!-- fragment --><p> You can access full list of configuration parameters with a description by executing following command in the <code>build</code> directory: </p><div class="fragment"><div class="line">cmake -LH</div></div><!-- fragment --><h2>Installing the project</h2>
+<p>Run following command to install HawkTracer in your system (you have to build it before, see paragraph above): </p><div class="fragment"><div class="line">cmake --build . --target install</div></div><!-- fragment --><p> By default, CMake installs HawkTracer to a default location, which is OS-specific (e.g. for most of Linux operating systems it is <code>/usr/local</code>). To change the install location, you have to specify <code>CMAKE_INSTALL_PREFIX</code> parameter when configuring the project, e.g.: </p><div class="fragment"><div class="line">cmake .. -DCMAKE_INSTALL_PREFIX=/home/mkolny/ht_install # other configuration parameters here...</div></div><!-- fragment --><p> After each re-configuration you usually have to re-compile and re-install the project.</p>
+<h2>Using <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> with your project</h2>
+<p>See page <a class="el" href="integration.html">Integrate HawkTracer to existing project</a> for information about integrating <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> to your projects. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="user_guides.html">User guides</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

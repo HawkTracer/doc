@@ -31,5 +31,6 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "task_scheduler.h", "task__scheduler_8h.html", "task__scheduler_8h" ],
     [ "thread.h", "thread_8h.html", "thread_8h" ],
     [ "timeline.h", "timeline_8h.html", "timeline_8h" ],
-    [ "timeline_listener.h", "timeline__listener_8h.html", "timeline__listener_8h" ]
+    [ "timeline_listener.h", "timeline__listener_8h.html", "timeline__listener_8h" ],
+    [ "tracepoint.h", "tracepoint_8h.html", "tracepoint_8h" ]
 ];

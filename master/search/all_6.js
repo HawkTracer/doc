@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['frequently_20asked_20question',['Frequently asked question',['../faq.html',1,'index']]],
+  ['faq_2emd',['faq.md',['../faq_8md.html',1,'']]],
   ['feature_5fcached_5fstring_2eh',['feature_cached_string.h',['../feature__cached__string_8h.html',1,'']]],
   ['feature_5fcallstack_2eh',['feature_callstack.h',['../feature__callstack_8h.html',1,'']]],
   ['features_2emd',['features.md',['../features_8md.html',1,'']]],

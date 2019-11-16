@@ -1,11 +1,13 @@
 var NAVTREE =
 [
   [ "HawkTracer", "index.html", [
-    [ "Build and Install", "build_install.html", null ],
+    [ "User guides", "user_guides.html", "user_guides" ],
     [ "Tutorials", "tutorials.html", "tutorials" ],
     [ "Integrate HawkTracer to existing project", "integration.html", null ],
     [ "Design", "design.html", "design" ],
+    [ "Frequently asked question", "faq.html", null ],
     [ "Contributing Guidelines", "md_docs__c_o_n_t_r_i_b_u_t_i_n_g.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
     ] ],
@@ -36,7 +38,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "alloc_8h.html",
-"mkcreflect_8h.html#a26fa5a3a3524967b05302d7356ff4119"
+"mkcreflect_8h.html#a106ca4d131af459d604efe24ce4b98bc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
