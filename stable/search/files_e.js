@@ -5,8 +5,11 @@ var searchData=
   ['thread_2eh',['thread.h',['../thread_8h.html',1,'']]],
   ['timeline_2eh',['timeline.h',['../timeline_8h.html',1,'']]],
   ['timeline_2emd',['timeline.md',['../timeline_8md.html',1,'']]],
+  ['timeline_5ffeatures_2emd',['timeline_features.md',['../timeline__features_8md.html',1,'']]],
   ['timeline_5flistener_2eh',['timeline_listener.h',['../timeline__listener_8h.html',1,'']]],
+  ['tracepoint_2eh',['tracepoint.h',['../tracepoint_8h.html',1,'']]],
   ['tutorial_5fcustom_5fevent_5ftype_2emd',['tutorial_custom_event_type.md',['../tutorial__custom__event__type_8md.html',1,'']]],
+  ['tutorial_5fdefine_5ftimeline_5ffeature_2emd',['tutorial_define_timeline_feature.md',['../tutorial__define__timeline__feature_8md.html',1,'']]],
   ['tutorial_5fhello_5fworld_2emd',['tutorial_hello_world.md',['../tutorial__hello__world_8md.html',1,'']]],
   ['tutorials_2emd',['tutorials.md',['../tutorials_8md.html',1,'']]]
 ];

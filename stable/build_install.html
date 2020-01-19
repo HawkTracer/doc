@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.9.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('build_install.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Downloading source code</h2>
-<p>Source code is hosted on GitHub servers. To download the code, just run following command: </p><div class="fragment"><div class="line">git clone https://github.com/loganek/hawktracer.git</div></div><!-- fragment --><p> You can also download a tarball for a specific release. All the available releases and their tarballs can be found on <a href="https://github.com/loganek/hawktracer//releases">the release page</a>.</p>
+<p>Source code is hosted on GitHub servers. To download the code, just run following command: </p><div class="fragment"><div class="line">git clone https://github.com/amzn/hawktracer.git</div></div><!-- fragment --><p> You can also download a tarball for a specific release. All the available releases and their tarballs can be found on <a href="https://github.com/amzn/hawktracer//releases">the release page</a>.</p>
 <h2>Compilation</h2>
 <p>HawkTracer uses <a href="https://cmake.org">CMake</a> for managing the build process. To configure the project and compile it, run following code in the source code directory: </p><div class="fragment"><div class="line">mkdir build     # create build directory</div><div class="line">cd build        # change current directory to &#39;build&#39;</div><div class="line">cmake ..        # configure the project</div><div class="line">cmake --build . # compile the project</div></div><!-- fragment --><p> It'll configure the project and builds <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> libraries.</p>
 <p>Please note that HawkTracer provides many configuration options, e.g. in order to build static libraries, run: </p><div class="fragment"><div class="line">cmake .. -DBUILD_STATIC_LIB=ON</div></div><!-- fragment --><p> You can access full list of configuration parameters with a description by executing following command in the <code>build</code> directory: </p><div class="fragment"><div class="line">cmake -LH</div></div><!-- fragment --><h2>Installing the project</h2>

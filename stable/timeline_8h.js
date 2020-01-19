@@ -8,11 +8,12 @@ var timeline_8h =
     [ "ht_timeline_create", "timeline_8h.html#ac43f980d516953937da0b5d45f39b02b", null ],
     [ "ht_timeline_destroy", "timeline_8h.html#ac6c15a5745921fb4ad192d69941a6169", null ],
     [ "ht_timeline_flush", "timeline_8h.html#a63d25bd5cd742130dd36f40db0ae31c0", null ],
-    [ "ht_timeline_get_feature", "timeline_8h.html#adb11e0e9a164e574675b5dcbf149ea98", null ],
+    [ "ht_timeline_get_feature", "timeline_8h.html#ab90bf9b62cc0a0881838b5dcd09f53a3", null ],
     [ "ht_timeline_get_id_provider", "timeline_8h.html#ad87daa5785beb4334d06cfa2619647d8", null ],
     [ "ht_timeline_init_event", "timeline_8h.html#a957cfb0634357ad48cba4da767766d50", null ],
     [ "ht_timeline_push_event", "timeline_8h.html#a372a26ed4b2e5512eed0f2bb990819d6", null ],
     [ "ht_timeline_register_listener", "timeline_8h.html#a97f7b662fee8673dc71a8f1444913806", null ],
-    [ "ht_timeline_set_feature", "timeline_8h.html#a8612e4c217429db91cd044a5bde57d4e", null ],
+    [ "ht_timeline_register_listener_full", "timeline_8h.html#a848e40a66f3ddcfad8e43c2d776f439a", null ],
+    [ "ht_timeline_set_feature", "timeline_8h.html#a230989a0afde8f4cb4d2c9d5de471519", null ],
     [ "ht_timeline_unregister_all_listeners", "timeline_8h.html#a5be02a715e5bf479bdc630d0dc4725f6", null ]
 ];

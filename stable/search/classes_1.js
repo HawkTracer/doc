@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scopedtracepoint',['ScopedTracepoint',['../class_hawk_tracer_1_1_scoped_tracepoint.html',1,'HawkTracer']]]
+  ['ht_5ffeatureklass',['HT_FeatureKlass',['../struct_h_t___feature_klass.html',1,'']]]
 ];

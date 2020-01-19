@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.9.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
   </td>
  </tr>
@@ -81,8 +81,7 @@ $(document).ready(function(){initNavTree('registry_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">registry.h File Reference</div>  </div>
 </div><!--header-->
@@ -93,9 +92,9 @@ $(document).ready(function(){initNavTree('registry_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9dff9ad37979419c120ca0c31edbd916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#a9dff9ad37979419c120ca0c31edbd916">ht_registry_register_feature</a> (uint32_t feature_id, <a class="el" href="registry_8h.html#a7d0974410ea246c44324e492aa74cff2">HT_FeatureDisableCallback</a> disable_callback)</td></tr>
-<tr class="memdesc:a9dff9ad37979419c120ca0c31edbd916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new a new feature in the system.  <a href="#a9dff9ad37979419c120ca0c31edbd916">More...</a><br /></td></tr>
-<tr class="separator:a9dff9ad37979419c120ca0c31edbd916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed49451c5d35681a78d7a5e31f3a2121"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> <a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#aed49451c5d35681a78d7a5e31f3a2121">ht_registry_register_feature</a> (<a class="el" href="struct_h_t___feature_klass.html">HT_FeatureKlass</a> *klass)</td></tr>
+<tr class="memdesc:aed49451c5d35681a78d7a5e31f3a2121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new a new feature in the system.  <a href="#aed49451c5d35681a78d7a5e31f3a2121">More...</a><br /></td></tr>
+<tr class="separator:aed49451c5d35681a78d7a5e31f3a2121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600acd9beaa6ba0b1228f125e9c613a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="core__events_8h.html#a4c054b84c5e1178e19bb146cf01c8a68">HT_EventKlassId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#a600acd9beaa6ba0b1228f125e9c613a4">ht_registry_register_event_klass</a> (<a class="el" href="events_8h.html#a1631a98c9a02156621cda6998d864eb0">HT_EventKlass</a> *event_klass)</td></tr>
 <tr class="memdesc:a600acd9beaa6ba0b1228f125e9c613a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new event klass in the system, or gets identifier if klass is already registered.  <a href="#a600acd9beaa6ba0b1228f125e9c613a4">More...</a><br /></td></tr>
 <tr class="separator:a600acd9beaa6ba0b1228f125e9c613a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,12 +104,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a028328a4814cefc13f248fef70ca88dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="events_8h.html#a1631a98c9a02156621cda6998d864eb0">HT_EventKlass</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#a028328a4814cefc13f248fef70ca88dd">ht_registry_get_event_klasses</a> (size_t *out_klass_count)</td></tr>
 <tr class="memdesc:a028328a4814cefc13f248fef70ca88dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of all the klasses registered in <a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> library.  <a href="#a028328a4814cefc13f248fef70ca88dd">More...</a><br /></td></tr>
 <tr class="separator:a028328a4814cefc13f248fef70ca88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a7d0974410ea246c44324e492aa74cff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registry_8h.html#a7d0974410ea246c44324e492aa74cff2">HT_FeatureDisableCallback</a> )(<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *)</td></tr>
-<tr class="memdesc:a7d0974410ea246c44324e492aa74cff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type of a callback which gets called when a timeline disables the feature.  <a href="#a7d0974410ea246c44324e492aa74cff2">More...</a><br /></td></tr>
-<tr class="separator:a7d0974410ea246c44324e492aa74cff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a028328a4814cefc13f248fef70ca88dd"></a>
@@ -212,28 +205,18 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9dff9ad37979419c120ca0c31edbd916"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dff9ad37979419c120ca0c31edbd916">&#9670;&nbsp;</a></span>ht_registry_register_feature()</h2>
+<a id="aed49451c5d35681a78d7a5e31f3a2121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed49451c5d35681a78d7a5e31f3a2121">&#9670;&nbsp;</a></span>ht_registry_register_feature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> ht_registry_register_feature </td>
+          <td class="memname"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> <a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> ht_registry_register_feature </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>feature_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="struct_h_t___feature_klass.html">HT_FeatureKlass</a> *&#160;</td>
+          <td class="paramname"><em>klass</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="registry_8h.html#a7d0974410ea246c44324e492aa74cff2">HT_FeatureDisableCallback</a>&#160;</td>
-          <td class="paramname"><em>disable_callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -241,29 +224,12 @@ Variables</h2></td></tr>
 <p>Registers new a new feature in the system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">feature_id</td><td>a feature identifier. </td></tr>
-    <tr><td class="paramname">disable_callback</td><td>a function which gets called when timeline disables the feature.</td></tr>
+    <tr><td class="paramname">klass</td><td>a pointer to a feature class to be registered.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a>, if registration completed successfully; otherwise, appropriate error code. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7d0974410ea246c44324e492aa74cff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d0974410ea246c44324e492aa74cff2">&#9670;&nbsp;</a></span>HT_FeatureDisableCallback</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a72cdb842abe63cf67271f3ff590b66bc">HT_DECLS_BEGIN</a> typedef void(* HT_FeatureDisableCallback) (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A type of a callback which gets called when a timeline disables the feature. </p>
+<p>Usually there's no need for calling the method explicitly. HT_DEFINE_FEATURE() macro generates a convinient function for registering the feature that encapsulates call of this function.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a> if registration completed successfully; otherwise, error code. </dd></dl>
 
 </div>
 </div>

@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.9.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('tcp__listener_8h.html','');});
 <div class="title">tcp_listener.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="base__types_8h_source.html">hawktracer/base_types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="timeline_8h_source.html">hawktracer/timeline.h</a>&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="tcp__listener_8h_source.html">Go to the source code of this file.</a></p>
@@ -99,12 +99,18 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a498712006c493cbe18364559f328ef71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__listener_8h.html#a498712006c493cbe18364559f328ef71">ht_tcp_listener_register</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, int port, size_t buffer_size, <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> *out_err)</td></tr>
+<tr class="memdesc:a498712006c493cbe18364559f328ef71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a tcp listener and registers it to a timeline.  <a href="#a498712006c493cbe18364559f328ef71">More...</a><br /></td></tr>
+<tr class="separator:a498712006c493cbe18364559f328ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0861020f01e7d08dd04d73637d4ecb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__listener_8h.html#ad0861020f01e7d08dd04d73637d4ecb5">ht_tcp_listener_create</a> (int port, size_t buffer_size, <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> *out_err)</td></tr>
 <tr class="separator:ad0861020f01e7d08dd04d73637d4ecb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fff02271240e3c396e209bd7c1111c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__listener_8h.html#aa0fff02271240e3c396e209bd7c1111c">ht_tcp_listener_destroy</a> (<a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a> *listener)</td></tr>
 <tr class="separator:aa0fff02271240e3c396e209bd7c1111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f94d934d949f948e82cb2e731e40616"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__listener_8h.html#a9f94d934d949f948e82cb2e731e40616">ht_tcp_listener_callback</a> (<a class="el" href="base__types_8h.html#a8de71361a2f7a9ee094eef407c97aa17">TEventPtr</a> events, size_t size, <a class="el" href="base__types_8h.html#af51299780e101cf59660b634a5bebfac">HT_Boolean</a> serialized, void *user_data)</td></tr>
 <tr class="separator:a9f94d934d949f948e82cb2e731e40616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8993145bb9054ce96f60a25c5e9f5e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcp__listener_8h.html#ac8993145bb9054ce96f60a25c5e9f5e7">ht_tcp_listener_stop</a> (<a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a> *listener)</td></tr>
+<tr class="memdesc:ac8993145bb9054ce96f60a25c5e9f5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops listening to new events.  <a href="#ac8993145bb9054ce96f60a25c5e9f5e7">More...</a><br /></td></tr>
+<tr class="separator:ac8993145bb9054ce96f60a25c5e9f5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a4f10cdbd010dfe02d5939e6b0dceb9b5"></a>
@@ -211,6 +217,87 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a498712006c493cbe18364559f328ef71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498712006c493cbe18364559f328ef71">&#9670;&nbsp;</a></span>ht_tcp_listener_register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a>* ht_tcp_listener_register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *&#160;</td>
+          <td class="paramname"><em>timeline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> *&#160;</td>
+          <td class="paramname"><em>out_err</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a tcp listener and registers it to a timeline. </p>
+<p>This is a helper function that wrapps <a class="el" href="tcp__listener_8h.html#ad0861020f01e7d08dd04d73637d4ecb5">ht_tcp_listener_create()</a> and <a class="el" href="timeline_8h.html#a848e40a66f3ddcfad8e43c2d776f439a" title="Registers new listener to a timeline. ">ht_timeline_register_listener_full()</a>. The user can achieve the same result by explicitly creating a listener and registering it to a timeline:</p>
+<div class="fragment"><div class="line"><a class="code" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a>* listener = <a class="code" href="tcp__listener_8h.html#ad0861020f01e7d08dd04d73637d4ecb5">ht_tcp_listener_create</a>(9876, 2048, &amp;error_code);</div><div class="line"><a class="code" href="timeline_8h.html#a848e40a66f3ddcfad8e43c2d776f439a">ht_timeline_register_listener_full</a>(</div><div class="line">            timeline,</div><div class="line">            <a class="code" href="tcp__listener_8h.html#a9f94d934d949f948e82cb2e731e40616">ht_tcp_listener_callback</a>,</div><div class="line">            listener,</div><div class="line">            (<a class="code" href="base__types_8h.html#aa31ed5b04e3fa7c6f9a1679192c3a634">HT_DestroyCallback</a>)<a class="code" href="tcp__listener_8h.html#aa0fff02271240e3c396e209bd7c1111c">ht_tcp_listener_destroy</a>);</div></div><!-- fragment --><p>Please note the example above doesn't implement error handling, which would make the code even more complicated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>the timeline where the listener will be attached to. </td></tr>
+    <tr><td class="paramname">port</td><td>the port of the TCP server. </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>a size of the internal buffer. </td></tr>
+    <tr><td class="paramname">out_err</td><td>a pointer to an error code variable where the error will be stored if the operation fails.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to a new instance of the listener. </dd></dl>
+
+</div>
+</div>
+<a id="ac8993145bb9054ce96f60a25c5e9f5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8993145bb9054ce96f60a25c5e9f5e7">&#9670;&nbsp;</a></span>ht_tcp_listener_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void ht_tcp_listener_stop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5">HT_TCPListener</a> *&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops listening to new events. </p>
+<p>The function is very similar to <a class="el" href="tcp__listener_8h.html#aa0fff02271240e3c396e209bd7c1111c">ht_tcp_listener_destroy()</a> except it does not release the memory allocated for <em>listener</em> object. After stopping the listener, there's no way to resume it. User needs to create another listener and register it for the timeline instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>the listener. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

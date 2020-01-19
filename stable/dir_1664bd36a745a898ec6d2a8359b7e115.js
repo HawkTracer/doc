@@ -11,6 +11,7 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "event_macros.h", "event__macros_8h.html", "event__macros_8h" ],
     [ "event_macros_impl.h", "event__macros__impl_8h.html", "event__macros__impl_8h" ],
     [ "events.h", "events_8h.html", "events_8h" ],
+    [ "feature.h", "feature_8h.html", "feature_8h" ],
     [ "feature_cached_string.h", "feature__cached__string_8h.html", "feature__cached__string_8h" ],
     [ "feature_callstack.h", "feature__callstack_8h.html", "feature__callstack_8h" ],
     [ "global_timeline.h", "global__timeline_8h.html", "global__timeline_8h" ],
@@ -31,5 +32,6 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "task_scheduler.h", "task__scheduler_8h.html", "task__scheduler_8h" ],
     [ "thread.h", "thread_8h.html", "thread_8h" ],
     [ "timeline.h", "timeline_8h.html", "timeline_8h" ],
-    [ "timeline_listener.h", "timeline__listener_8h.html", "timeline__listener_8h" ]
+    [ "timeline_listener.h", "timeline__listener_8h.html", "timeline__listener_8h" ],
+    [ "tracepoint.h", "tracepoint_8h.html", "tracepoint_8h" ]
 ];

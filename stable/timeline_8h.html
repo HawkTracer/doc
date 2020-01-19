@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.9.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
   </td>
  </tr>
@@ -92,13 +92,14 @@ $(document).ready(function(){initNavTree('timeline_8h.html','');});
 <code>#include &lt;<a class="el" href="monotonic__clock_8h_source.html">hawktracer/monotonic_clock.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="timeline__listener_8h_source.html">hawktracer/timeline_listener.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="event__id__provider_8h_source.html">hawktracer/event_id_provider.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="feature_8h_source.html">hawktracer/feature.h</a>&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="timeline_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a813df519e06f08370d871dbcfaa15e5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a813df519e06f08370d871dbcfaa15e5b">HT_TIMELINE_FEATURE</a>(timeline,  feature_id,  feature_type)&#160;&#160;&#160;((feature_type*)<a class="el" href="timeline_8h.html#adb11e0e9a164e574675b5dcbf149ea98">ht_timeline_get_feature</a>(timeline, feature_id))</td></tr>
+<tr class="memitem:a813df519e06f08370d871dbcfaa15e5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a813df519e06f08370d871dbcfaa15e5b">HT_TIMELINE_FEATURE</a>(timeline,  feature_id,  feature_type)&#160;&#160;&#160;((feature_type*)<a class="el" href="timeline_8h.html#ab90bf9b62cc0a0881838b5dcd09f53a3">ht_timeline_get_feature</a>(timeline, feature_id))</td></tr>
 <tr class="memdesc:a813df519e06f08370d871dbcfaa15e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a timeline's feature.  <a href="#a813df519e06f08370d871dbcfaa15e5b">More...</a><br /></td></tr>
 <tr class="separator:a813df519e06f08370d871dbcfaa15e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816e9e186a1b084ac2c82308fb2e6746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a816e9e186a1b084ac2c82308fb2e6746">HT_TIMELINE_MAX_FEATURES</a>&#160;&#160;&#160;32</td></tr>
@@ -126,6 +127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a97f7b662fee8673dc71a8f1444913806"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a97f7b662fee8673dc71a8f1444913806">ht_timeline_register_listener</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, <a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a> callback, void *user_data)</td></tr>
 <tr class="memdesc:a97f7b662fee8673dc71a8f1444913806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new listener to a timeline.  <a href="#a97f7b662fee8673dc71a8f1444913806">More...</a><br /></td></tr>
 <tr class="separator:a97f7b662fee8673dc71a8f1444913806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848e40a66f3ddcfad8e43c2d776f439a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a848e40a66f3ddcfad8e43c2d776f439a">ht_timeline_register_listener_full</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, <a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a> callback, void *user_data, <a class="el" href="base__types_8h.html#aa31ed5b04e3fa7c6f9a1679192c3a634">HT_DestroyCallback</a> destroy_callback)</td></tr>
+<tr class="memdesc:a848e40a66f3ddcfad8e43c2d776f439a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers new listener to a timeline.  <a href="#a848e40a66f3ddcfad8e43c2d776f439a">More...</a><br /></td></tr>
+<tr class="separator:a848e40a66f3ddcfad8e43c2d776f439a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be02a715e5bf479bdc630d0dc4725f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a5be02a715e5bf479bdc630d0dc4725f6">ht_timeline_unregister_all_listeners</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline)</td></tr>
 <tr class="memdesc:a5be02a715e5bf479bdc630d0dc4725f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the listeners from a timeline.  <a href="#a5be02a715e5bf479bdc630d0dc4725f6">More...</a><br /></td></tr>
 <tr class="separator:a5be02a715e5bf479bdc630d0dc4725f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,10 +142,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a63d25bd5cd742130dd36f40db0ae31c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a63d25bd5cd742130dd36f40db0ae31c0">ht_timeline_flush</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline)</td></tr>
 <tr class="memdesc:a63d25bd5cd742130dd36f40db0ae31c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers all the events from internal buffer to listeners.  <a href="#a63d25bd5cd742130dd36f40db0ae31c0">More...</a><br /></td></tr>
 <tr class="separator:a63d25bd5cd742130dd36f40db0ae31c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8612e4c217429db91cd044a5bde57d4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a8612e4c217429db91cd044a5bde57d4e">ht_timeline_set_feature</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, size_t feature_id, void *feature)</td></tr>
-<tr class="separator:a8612e4c217429db91cd044a5bde57d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb11e0e9a164e574675b5dcbf149ea98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#adb11e0e9a164e574675b5dcbf149ea98">ht_timeline_get_feature</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, size_t feature_id)</td></tr>
-<tr class="separator:adb11e0e9a164e574675b5dcbf149ea98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230989a0afde8f4cb4d2c9d5de471519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#a230989a0afde8f4cb4d2c9d5de471519">ht_timeline_set_feature</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, <a class="el" href="feature_8h.html#a72209c3c8e0f9e51403b30c1ba29b2ec">HT_Feature</a> *feature)</td></tr>
+<tr class="memdesc:a230989a0afde8f4cb4d2c9d5de471519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables a specific feature in the timeline.  <a href="#a230989a0afde8f4cb4d2c9d5de471519">More...</a><br /></td></tr>
+<tr class="separator:a230989a0afde8f4cb4d2c9d5de471519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90bf9b62cc0a0881838b5dcd09f53a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="feature_8h.html#a72209c3c8e0f9e51403b30c1ba29b2ec">HT_Feature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#ab90bf9b62cc0a0881838b5dcd09f53a3">ht_timeline_get_feature</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, <a class="el" href="struct_h_t___feature_klass.html">HT_FeatureKlass</a> *feature_klass)</td></tr>
+<tr class="memdesc:ab90bf9b62cc0a0881838b5dcd09f53a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the feature object of a specific class from the pipeline.  <a href="#ab90bf9b62cc0a0881838b5dcd09f53a3">More...</a><br /></td></tr>
+<tr class="separator:ab90bf9b62cc0a0881838b5dcd09f53a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87daa5785beb4334d06cfa2619647d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="event__id__provider_8h.html#a53397963458e3e35b25f94984604c2f4">HT_EventIdProvider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="timeline_8h.html#ad87daa5785beb4334d06cfa2619647d8">ht_timeline_get_id_provider</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline)</td></tr>
 <tr class="separator:ad87daa5785beb4334d06cfa2619647d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -173,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((feature_type*)<a class="el" href="timeline_8h.html#adb11e0e9a164e574675b5dcbf149ea98">ht_timeline_get_feature</a>(timeline, feature_id))</td>
+          <td></td><td>&#160;&#160;&#160;((feature_type*)<a class="el" href="timeline_8h.html#ab90bf9b62cc0a0881838b5dcd09f53a3">ht_timeline_get_feature</a>(timeline, feature_id))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -404,14 +410,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adb11e0e9a164e574675b5dcbf149ea98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb11e0e9a164e574675b5dcbf149ea98">&#9670;&nbsp;</a></span>ht_timeline_get_feature()</h2>
+<a id="ab90bf9b62cc0a0881838b5dcd09f53a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90bf9b62cc0a0881838b5dcd09f53a3">&#9670;&nbsp;</a></span>ht_timeline_get_feature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void* ht_timeline_get_feature </td>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="feature_8h.html#a72209c3c8e0f9e51403b30c1ba29b2ec">HT_Feature</a>* ht_timeline_get_feature </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *&#160;</td>
           <td class="paramname"><em>timeline</em>, </td>
@@ -419,8 +425,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>feature_id</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_h_t___feature_klass.html">HT_FeatureKlass</a> *&#160;</td>
+          <td class="paramname"><em>feature_klass</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -429,6 +435,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the feature object of a specific class from the pipeline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
+    <tr><td class="paramname">feature_klass</td><td>the feature class. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a feature object of the specific class, if the timeline has the feature of this class enabled; otherwise, NULL. </dd></dl>
 
 </div>
 </div>
@@ -566,18 +582,19 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a> if registration completed successfully; otherwise, error code. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a> if registration completed successfully; otherwise, error code.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>use <a class="el" href="timeline_8h.html#a848e40a66f3ddcfad8e43c2d776f439a" title="Registers new listener to a timeline. ">ht_timeline_register_listener_full()</a> instead. </dd></dl>
 
 </div>
 </div>
-<a id="a8612e4c217429db91cd044a5bde57d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8612e4c217429db91cd044a5bde57d4e">&#9670;&nbsp;</a></span>ht_timeline_set_feature()</h2>
+<a id="a848e40a66f3ddcfad8e43c2d776f439a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848e40a66f3ddcfad8e43c2d776f439a">&#9670;&nbsp;</a></span>ht_timeline_register_listener_full()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void ht_timeline_set_feature </td>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> ht_timeline_register_listener_full </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *&#160;</td>
           <td class="paramname"><em>timeline</em>, </td>
@@ -585,13 +602,60 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>feature_id</em>, </td>
+          <td class="paramtype"><a class="el" href="timeline__listener_8h.html#acdd335c36349dd9465f1ac4c6a22d3e2">HT_TimelineListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="base__types_8h.html#aa31ed5b04e3fa7c6f9a1679192c3a634">HT_DestroyCallback</a>&#160;</td>
+          <td class="paramname"><em>destroy_callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registers new listener to a timeline. </p>
+<p>The timeline will call <em>destroy_callback</em> callback to destroy <em>user_data</em> value when it is no longer needed, so the user must not free <em>user_data</em>, unless the value of <em>destroy_callback</em> is NULL - in that case, no destroy callback will be called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
+    <tr><td class="paramname">callback</td><td>a callback of the listener. </td></tr>
+    <tr><td class="paramname">user_data</td><td>additional data that will be passed to the listener's callback. </td></tr>
+    <tr><td class="paramname">destroy_callback</td><td>functor called when <em>user_data</em> is no longer needed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a> if registration completed successfully; otherwise, error code. </dd></dl>
+
+</div>
+</div>
+<a id="a230989a0afde8f4cb4d2c9d5de471519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230989a0afde8f4cb4d2c9d5de471519">&#9670;&nbsp;</a></span>ht_timeline_set_feature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">HT_ErrorCode</a> ht_timeline_set_feature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *&#160;</td>
+          <td class="paramname"><em>timeline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="feature_8h.html#a72209c3c8e0f9e51403b30c1ba29b2ec">HT_Feature</a> *&#160;</td>
           <td class="paramname"><em>feature</em>&#160;</td>
         </tr>
         <tr>
@@ -601,6 +665,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enables a specific feature in the timeline. </p>
+<p>The timeline takes ownership of the feature, it means it will automatically destroys it during timeline's destruction. The timeline can have multiple features enabled, but it's not possible to enable the same feature twice (second attempt results with <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae7a1e01fa571e23ba09b2269bf35e66e" title="Try to register a timeline feature using ID which is already taken by some other feature. ">HT_ERR_FEATURE_ALREADY_REGISTERED</a> error code). Before enabling the feature for the timeline, the feature must be registered. If it's not, the function returns <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af4637d60e0c027aa80ba9e8c2fc1789f" title="Try to use feature that has not been registered in the system. ">HT_ERR_FEATURE_NOT_REGISTERED</a> error code.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
+    <tr><td class="paramname">feature</td><td>the feature. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae9901df0b80b84491159241a44d6b770" title="No error. ">HT_ERR_OK</a> if enabling the feature completed successfully; otherwise, error code. </dd></dl>
 
 </div>
 </div>
@@ -623,10 +698,11 @@ Functions</h2></td></tr>
 <p>Removes all the listeners from a timeline. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
+    <tr><td class="paramname">timeline</td><td>the timeline.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd><a class="el" href="namespace_hawk_tracer.html">HawkTracer</a> no longer allows unregistering listeners. However, the common pattern is to "stop" the listener; i.e. release all the resources held by listener and start ignoring all the incoming events. See <a class="el" href="file__dump__listener_8h.html#aff8860d84ae798acd287115ce003a5a0" title="Stops listening to new events. ">ht_file_dump_listener_stop()</a> for the example. </dd></dl>
 
 </div>
 </div>

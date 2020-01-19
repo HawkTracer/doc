@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">HawkTracer
-   &#160;<span id="projectnumber">0.9.0</span>
+   &#160;<span id="projectnumber">0.10.0</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a82161c09606b34ff0276b6e373e68987"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__types_8h.html#a82161c09606b34ff0276b6e373e68987">HT_INVALID_KLASS_ID</a>&#160;&#160;&#160;((<a class="el" href="core__events_8h.html#a4c054b84c5e1178e19bb146cf01c8a68">HT_EventKlassId</a>)-1)</td></tr>
 <tr class="memdesc:a82161c09606b34ff0276b6e373e68987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an invalid klass identifier.  <a href="#a82161c09606b34ff0276b6e373e68987">More...</a><br /></td></tr>
 <tr class="separator:a82161c09606b34ff0276b6e373e68987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b225e64da0b6f915ce44adfefc9231"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__types_8h.html#a16b225e64da0b6f915ce44adfefc9231">HT_INVALID_FEATURE_ID</a>&#160;&#160;&#160;((uint32_t)-1)</td></tr>
+<tr class="memdesc:a16b225e64da0b6f915ce44adfefc9231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an invalid feature identifier.  <a href="#a16b225e64da0b6f915ce44adfefc9231">More...</a><br /></td></tr>
+<tr class="separator:a16b225e64da0b6f915ce44adfefc9231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -130,6 +133,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ac228543f15091b45a27e163ac65606ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="core__events_8h.html#a31226327eb5f95076fa25852a3074faa">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__types_8h.html#ac228543f15091b45a27e163ac65606ee">HT_Byte</a></td></tr>
 <tr class="memdesc:ac228543f15091b45a27e163ac65606ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">An unsigned integer guaranteed to be 8 bits on all platforms.  <a href="#ac228543f15091b45a27e163ac65606ee">More...</a><br /></td></tr>
 <tr class="separator:ac228543f15091b45a27e163ac65606ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31ed5b04e3fa7c6f9a1679192c3a634"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base__types_8h.html#aa31ed5b04e3fa7c6f9a1679192c3a634">HT_DestroyCallback</a>) (void *data)</td></tr>
+<tr class="memdesc:aa31ed5b04e3fa7c6f9a1679192c3a634"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type of function called to destroy <em>data</em> element.  <a href="#aa31ed5b04e3fa7c6f9a1679192c3a634">More...</a><br /></td></tr>
+<tr class="separator:aa31ed5b04e3fa7c6f9a1679192c3a634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -139,14 +145,17 @@ Enumerations</h2></td></tr>
 <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a8c326508d21bdb4620d20e6a70640248">HT_ERR_OUT_OF_MEMORY</a>, 
 <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2ae7a1e01fa571e23ba09b2269bf35e66e">HT_ERR_FEATURE_ALREADY_REGISTERED</a>, 
 <br />
-&#160;&#160;<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a0ce4cf0b0f1327f397af4494d778b698">HT_ERR_LISTENER_CONTAINER_ALREADY_REGISTERED</a>, 
+&#160;&#160;<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af4637d60e0c027aa80ba9e8c2fc1789f">HT_ERR_FEATURE_NOT_REGISTERED</a>, 
+<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2aee48255511a9cf1f4f6a86d30f7dd7f7">HT_ERR_MAX_FEATURE_COUNT_REACHED</a>, 
+<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a0ce4cf0b0f1327f397af4494d778b698">HT_ERR_LISTENER_CONTAINER_ALREADY_REGISTERED</a>, 
 <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af7068708e2b0458ad77b3e4dec83d66f">HT_ERR_CANT_OPEN_FILE</a>, 
-<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a6dcae62f82fe777462dd1cb873140754">HT_ERR_CANT_START_TCP_SERVER</a>, 
-<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a209e96f1575041bc3e97a6f5f0848388">HT_ERR_CANT_CREATE_LISTENER_CONTAINER</a>, 
 <br />
-&#160;&#160;<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af0c81e3ef620711a9f6e240095529d6a">HT_ERR_INVALID_FORMAT</a>, 
+&#160;&#160;<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a6dcae62f82fe777462dd1cb873140754">HT_ERR_CANT_START_TCP_SERVER</a>, 
+<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a209e96f1575041bc3e97a6f5f0848388">HT_ERR_CANT_CREATE_LISTENER_CONTAINER</a>, 
+<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2af0c81e3ef620711a9f6e240095529d6a">HT_ERR_INVALID_FORMAT</a>, 
 <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2a965bcfd1b2c163ec8962ce1b56f38eb4">HT_ERR_INVALID_ARGUMENT</a>, 
-<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2afff565107489af0cfd5658dbcc3b33f1">HT_ERR_OUT_OF_RANGE</a>, 
+<br />
+&#160;&#160;<a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2afff565107489af0cfd5658dbcc3b33f1">HT_ERR_OUT_OF_RANGE</a>, 
 <a class="el" href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2aad0defc28c74ad6d93d59920790fa9a5">HT_ERR_MISSING_ARGUMENT</a>
 <br />
  }<tr class="memdesc:a33d648be4499dad0fed381138f28b6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines list of possible errors returned by library functions.  <a href="base__types_8h.html#a33d648be4499dad0fed381138f28b6a2">More...</a><br /></td></tr>
@@ -191,6 +200,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defines <b>false</b> value for the HT_Boolean type. </p>
+
+</div>
+</div>
+<a id="a16b225e64da0b6f915ce44adfefc9231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b225e64da0b6f915ce44adfefc9231">&#9670;&nbsp;</a></span>HT_INVALID_FEATURE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HT_INVALID_FEATURE_ID&#160;&#160;&#160;((uint32_t)-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines an invalid feature identifier. </p>
 
 </div>
 </div>
@@ -256,6 +281,29 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An unsigned integer guaranteed to be 8 bits on all platforms. </p>
+
+</div>
+</div>
+<a id="aa31ed5b04e3fa7c6f9a1679192c3a634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31ed5b04e3fa7c6f9a1679192c3a634">&#9670;&nbsp;</a></span>HT_DestroyCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* HT_DestroyCallback) (void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A type of function called to destroy <em>data</em> element. </p>
+<p>It should free all the memory and resources held by the <em>data</em> element.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>the element to be destroyed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -384,6 +432,10 @@ Variables</h2></td></tr>
 <p>This is very serious error, and most likely your entire application is broken at this point of time. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a33d648be4499dad0fed381138f28b6a2ae7a1e01fa571e23ba09b2269bf35e66e"></a>HT_ERR_FEATURE_ALREADY_REGISTERED&#160;</td><td class="fielddoc"><p>Try to register a timeline feature using ID which is already taken by some other feature. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a33d648be4499dad0fed381138f28b6a2af4637d60e0c027aa80ba9e8c2fc1789f"></a>HT_ERR_FEATURE_NOT_REGISTERED&#160;</td><td class="fielddoc"><p>Try to use feature that has not been registered in the system. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a33d648be4499dad0fed381138f28b6a2aee48255511a9cf1f4f6a86d30f7dd7f7"></a>HT_ERR_MAX_FEATURE_COUNT_REACHED&#160;</td><td class="fielddoc"><p>Try to register too many features in the system. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a33d648be4499dad0fed381138f28b6a2a0ce4cf0b0f1327f397af4494d778b698"></a>HT_ERR_LISTENER_CONTAINER_ALREADY_REGISTERED&#160;</td><td class="fielddoc"><p>Try to register container with name already used in registry. </p>
 <p>This error is used internally, and is never returned by public API. TODO: consider removing it from public enum. </p>

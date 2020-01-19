@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['htdump_20format_20design',['HTDUMP format design',['../design_htdump_format.html',1,'design']]]
+  ['frequently_20asked_20question',['Frequently asked question',['../faq.html',1,'']]]
 ];
