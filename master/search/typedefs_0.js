@@ -15,7 +15,6 @@ var searchData=
   ['ht_5fmemoryusagecontext',['HT_MemoryUsageContext',['../memory__usage_8h.html#a389db67fb09ab60b82a545c14b4ad2e0',1,'memory_usage.h']]],
   ['ht_5ftaskid',['HT_TaskId',['../task__scheduler_8h.html#a1fc7d62f13c82af1178365abbb6342a6',1,'task_scheduler.h']]],
   ['ht_5ftaskscheduler',['HT_TaskScheduler',['../task__scheduler_8h.html#a8b9cea6cdf314444f150a22d65d4b961',1,'task_scheduler.h']]],
-  ['ht_5ftcplistener',['HT_TCPListener',['../tcp__listener_8h.html#a4f10cdbd010dfe02d5939e6b0dceb9b5',1,'tcp_listener.h']]],
   ['ht_5fthreadid',['HT_ThreadId',['../base__types_8h.html#a794d6081d06de36ce1b6606917d2aee1',1,'base_types.h']]],
   ['ht_5ftimeline',['HT_Timeline',['../timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f',1,'timeline.h']]],
   ['ht_5ftimestampns',['HT_TimestampNs',['../base__types_8h.html#aa304d120184a3d79d145f9521a3025d5',1,'base_types.h']]]

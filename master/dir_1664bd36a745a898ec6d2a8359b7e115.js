@@ -21,7 +21,7 @@ var dir_1664bd36a745a898ec6d2a8359b7e115 =
     [ "memory_usage.h", "memory__usage_8h.html", "memory__usage_8h" ],
     [ "mkcreflect.h", "mkcreflect_8h.html", "mkcreflect_8h" ],
     [ "monotonic_clock.h", "monotonic__clock_8h.html", "monotonic__clock_8h" ],
-    [ "posix_mapped_tracepoint.h", "posix__mapped__tracepoint_8h.html", "posix__mapped__tracepoint_8h" ],
+    [ "posix_mapped_tracepoint.h", "posix__mapped__tracepoint_8h.html", null ],
     [ "registry.h", "registry_8h.html", "registry_8h" ],
     [ "scoped_tracepoint.h", "scoped__tracepoint_8h.html", "scoped__tracepoint_8h" ],
     [ "scoped_tracepoint.hpp", "scoped__tracepoint_8hpp.html", [

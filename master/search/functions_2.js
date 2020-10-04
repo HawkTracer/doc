@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mkcreflect_5fdefine_5fstruct',['MKCREFLECT_DEFINE_STRUCT',['../events_8h.html#a4b7454369ddcf03431a1444db902a726',1,'events.h']]]
+  ['scopedtracepoint',['ScopedTracepoint',['../class_hawk_tracer_1_1_scoped_tracepoint.html#a20b4313e8bc17aba2408bfbd22c0a86a',1,'HawkTracer::ScopedTracepoint']]]
 ];

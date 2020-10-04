@@ -99,13 +99,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab65d2d0987b4f2496f23f7d9779af125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables a feature for the timeline.  <a href="#ab65d2d0987b4f2496f23f7d9779af125">More...</a><br /></td></tr>
 <tr class="separator:ab65d2d0987b4f2496f23f7d9779af125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5faeace9dbb85575ef7c2b1ca89158ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee">ht_feature_cached_string_add_mapping</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, const char *label)</td></tr>
-<tr class="memdesc:a5faeace9dbb85575ef7c2b1ca89158ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a mapping.  <a href="#a5faeace9dbb85575ef7c2b1ca89158ee">More...</a><br /></td></tr>
+<tr class="memdesc:a5faeace9dbb85575ef7c2b1ca89158ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a mapping for a static (compile-time) string.  <a href="#a5faeace9dbb85575ef7c2b1ca89158ee">More...</a><br /></td></tr>
 <tr class="separator:a5faeace9dbb85575ef7c2b1ca89158ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd8161a87508115767de52a6976afb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__cached__string_8h.html#a4cd8161a87508115767de52a6976afb8">ht_feature_cached_string_add_mapping_dynamic</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, const char *label)</td></tr>
+<tr class="memdesc:a4cd8161a87508115767de52a6976afb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a mapping for dynamically allocated string.  <a href="#a4cd8161a87508115767de52a6976afb8">More...</a><br /></td></tr>
+<tr class="separator:a4cd8161a87508115767de52a6976afb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac827e6d71a7bfc0d728db3cbf22f3fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__cached__string_8h.html#aac827e6d71a7bfc0d728db3cbf22f3fe">ht_feature_cached_string_push_map</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline)</td></tr>
 <tr class="memdesc:aac827e6d71a7bfc0d728db3cbf22f3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes mapping events of all the strings registered in the feature.  <a href="#aac827e6d71a7bfc0d728db3cbf22f3fe">More...</a><br /></td></tr>
 <tr class="separator:aac827e6d71a7bfc0d728db3cbf22f3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd8161a87508115767de52a6976afb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="macros_8h.html#a466255af46783a4dd6a2198ba9e4889c">HT_API</a> uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__cached__string_8h.html#a4cd8161a87508115767de52a6976afb8">ht_feature_cached_string_add_mapping_dynamic</a> (<a class="el" href="timeline_8h.html#a9fbfe949ba846a39b58edb008ee0b93f">HT_Timeline</a> *timeline, const char *label)</td></tr>
-<tr class="separator:a4cd8161a87508115767de52a6976afb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores a map of strings and their hash values. </p>
@@ -137,12 +138,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a mapping. </p>
+<p>Adds a mapping for a static (compile-time) string. </p>
 <p>The function also pushes a mapping event to the timeline.</p>
+<dl class="section note"><dt>Note</dt><dd>The listener which is added to the timeline after the mapping is being added, might not receive the mapping event. Just after new listener is added, <a class="el" href="feature__cached__string_8h.html#aac827e6d71a7bfc0d728db3cbf22f3fe" title="Pushes mapping events of all the strings registered in the feature. ">ht_feature_cached_string_push_map()</a> should be called to make sure the listener receives all the mapping events.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
-    <tr><td class="paramname">label</td><td>a string to map. The string must be a static string (i.e. must be valid for the whole period of the program). For dynamic strings, use <a class="el" href="feature__cached__string_8h.html#a4cd8161a87508115767de52a6976afb8">ht_feature_cached_string_add_mapping_dynamic()</a> </td></tr>
+    <tr><td class="paramname">label</td><td>a string to map. The string must be a static string (i.e. must be valid for the whole period of the program). For dynamic strings, use <a class="el" href="feature__cached__string_8h.html#a4cd8161a87508115767de52a6976afb8" title="Adds a mapping for dynamically allocated string. ">ht_feature_cached_string_add_mapping_dynamic()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -175,6 +177,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a mapping for dynamically allocated string. </p>
+<p>The function also pushes a mapping event to the timeline.</p>
+<dl class="section note"><dt>Note</dt><dd>The listener which is added to the timeline after the mapping is being added, might not receive the mapping event. Just after new listener is added, <a class="el" href="feature__cached__string_8h.html#aac827e6d71a7bfc0d728db3cbf22f3fe" title="Pushes mapping events of all the strings registered in the feature. ">ht_feature_cached_string_push_map()</a> should be called to make sure the listener receives all the mapping events.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeline</td><td>the timeline. </td></tr>
+    <tr><td class="paramname">label</td><td>a string to map. The string might be dynamically allocated, however, for static (compile-time) strings it's recommended to use <a class="el" href="feature__cached__string_8h.html#a5faeace9dbb85575ef7c2b1ca89158ee" title="Adds a mapping for a static (compile-time) string. ">ht_feature_cached_string_add_mapping()</a> which is an optimized version of this function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>hash of the string passed as argument. </dd></dl>
 
 </div>
 </div>
